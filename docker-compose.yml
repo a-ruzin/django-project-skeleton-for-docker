@@ -1,0 +1,47 @@
+version: '3'
+services:
+  db: # -----------------------------------------------------------------------
+    image: postgres:13.3-alpine
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      - ./deploy/data/backup/db:/var/lib/backup/data
+      - ./db/bin:/var/lib/backup/bin
+    env_file:
+      - ./deploy/envs/postgres.env
+
+  nginx: # --------------------------------------------------------------------
+    build:
+      context: nginx
+      dockerfile: Dockerfile
+    depends_on:
+      - app
+      - static
+
+  app: # ------------------------------------------------------------------
+    build:
+      context: app
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    env_file:
+      - ./deploy/envs/postgres.env
+      - ./deploy/envs/app.env
+    volumes:
+      - ./deploy/logs/app:/app/logs
+      - http-media:/app/media
+      - http-media-public:/www/media/public
+      - http-static:/app/static
+
+  static: # -------------------------------------------------------------------
+    build:
+      context: app-static
+      dockerfile: Dockerfile
+    volumes:
+       - http-media-public:/www/media
+       - http-static:/www/static
+
+volumes:
+  db-data:
+  http-media:
+  http-media-public:
+  http-static:

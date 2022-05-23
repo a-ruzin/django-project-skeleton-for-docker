@@ -1,0 +1,27 @@
+.venv/
+app/config/local/*
+app/logs/*
+app/locks/*
+!app/logs/.gitignore
+!app/locks/.gitignore
+app/media/*
+app/static/*
+!app/media/.gitignore
+docker-compose.override.yml
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+
+deploy/data/db/
+deploy/data/app/media/*
+deploy/data/app/static/*
+deploy/envs/*.env
+deploy/logs/*/*
+deploy/nginx/.htpasswd
+
+!deploy/data/app/media/.gitignore
+!deploy/envs/*.example.env
+!deploy/logs/*/.gitignore
