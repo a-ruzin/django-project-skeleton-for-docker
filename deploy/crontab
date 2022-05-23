@@ -1,0 +1,13 @@
+LC_CTYPE="ru_RU.UTF-8"
+MAILTO=
+SHELL=/bin/bash
+WD=/home/project/
+
+# m H d M w
+# * * * * * m - min, H - hour, d - day of month, M - month, w - day of week
+
+# Backup postgres
+0 1 * * *             cd $WD && /usr/bin/docker-compose exec -T db /var/lib/backup/bin/backup.sh
+
+# renew SSL-certificate
+0 12 * * 3            cd $WD && /usr/bin/docker-compose exec -T nginx certbot renew --deploy-hook "nginx -t && nginx -s reload"
