@@ -75,3 +75,19 @@ It consists of 4 containers:
 > If you changed `domain/port` in `docker-compose.override.yml`,
 > don't forget to change it in `CSRF_TRUSTED_ORIGINS` variable
 > in `app/config/settings/__init__.py`
+
+
+## Conflicts while developing several projects
+
+Developing several projects we encounter conflicts in port bindings.
+We can solve this problem by changing ports or IP using `docker-compose.override.yml`.
+It is useful to bind services to ports as they used in production.
+So let's use different IPs - bring up different loopback interface 127.0.0.* for each project.
+
+Add loopback into /etc/hosts
+   
+    127.0.0.2	project
+
+Then bring up this loopback interface up (for mac).
+
+    sudo ifconfig lo0 alias 127.0.0.2 up

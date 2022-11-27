@@ -2,19 +2,14 @@ version: '3'
 services:
   db: # -----------------------------------------------------------------------
     ports:
-      - "5433:5432"
+      - "${PROJECT_IP:-0.0.0.0}:5432:5432"
 
   nginx: # --------------------------------------------------------------------
     ports:
-      - "8081:80"
+      - "${PROJECT_IP:-0.0.0.0}:80:80"
 
   app: # ------------------------------------------------------------------
     volumes:
       - ./app:/app
     command:
             sh -c './manage.py collectstatic --noinput ; ./manage.py runserver 0.0.0.0:8000'
-    build:
-      args:
-        PIPENV_OPTIONS: --dev --keep-outdated
-          # --dev is for development dependencies
-          # --keep-outdated is for keeping outdated packages (may not work if some dependencies are too old)
