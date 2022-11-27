@@ -39,20 +39,28 @@ It consists of 4 containers:
        #--- setup ports for postgress and nginx
        vi docker-compose.override.yml
 
-5. start containers
+5. build containers
+
+       docker compose build
+
+   > WARNING: APP container may not be built because outdated
+   > binary psycopg2 library. In this case remove --keep-outdated
+   > flag in docker-compose.override.yml and try again.
+
+6. start containers
 
        docker compose up -d
 
-6. make initial django setup
+7. make initial django setup
 
        docker compose exec app ./manage.py migrate
-       docker-compose exec app ./manage.py createsuperuser
+       docker compose exec app ./manage.py createsuperuser
 
-7. check for web-interface
+8. check for web-interface
 
    open http://localhost:8081/admin/ and log in with chosen attributes
 
-8. setup pycharm
+9. setup pycharm
 
     1. open settings dialog
     2. search for "python interpreter" section

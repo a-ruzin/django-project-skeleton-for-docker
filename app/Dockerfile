@@ -2,7 +2,7 @@ FROM python:3.10-slim-bullseye as requirements
 ARG PIPENV_OPTIONS=""
 RUN pip install -U pipenv
 COPY Pipfile* /tmp/
-RUN cd /tmp && pipenv lock --keep-outdated ${PIPENV_OPTIONS} --requirements > requirements.txt
+RUN cd /tmp && pipenv lock ${PIPENV_OPTIONS} --requirements > requirements.txt
 
 FROM python:3.10-slim-bullseye
 WORKDIR /app
