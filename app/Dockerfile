@@ -1,10 +1,13 @@
-FROM python:3.10-slim-bullseye as requirements
+FROM python:3.11-slim-bullseye as requirements
 ARG PIPENV_OPTIONS=""
 RUN pip install -U pipenv
 COPY Pipfile* /tmp/
-RUN cd /tmp && pipenv lock ${PIPENV_OPTIONS} --requirements > requirements.txt
+RUN cd /tmp &&  \
+    pipenv lock ${PIPENV_OPTIONS} ${PIPENV_KEEP_OUTDATED} && \
+    pipenv requirements ${PIPENV_OPTIONS} > requirements.txt
 
-FROM python:3.10-slim-bullseye
+
+FROM python:3.11-slim-bullseye
 WORKDIR /app
 ENV PYTHONUNBUFFERED=1
 COPY --from=requirements /tmp/requirements.txt /app/requirements.txt

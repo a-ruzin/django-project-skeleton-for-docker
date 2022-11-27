@@ -32,6 +32,8 @@ It consists of 4 containers:
        cp postgres.env.example.env postgres.env
        vi postgres.env
        popd
+       cp .env.example.env .env
+       vi .env
 
 4. configure local docker-compose.yml
 
