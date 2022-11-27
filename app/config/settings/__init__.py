@@ -14,6 +14,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 LOGS_DIR = BASE_DIR / 'logs'
 LOCKS_DIR = BASE_DIR / 'locks'
 
+PROJECT_PROTOCOL = env('PROJECT_PROTOCOL') or 'http'
+PROJECT_DOMAIN = env('PROJECT_DOMAIN') or 'localhost'
+PROJECT_PORT = env('PROJECT_PORT') or 80
+PROJECT_PORT_SSL = env('PROJECT_PORT_SSL') or 443
+
 ALLOWED_HOSTS = env('ALLOWED_HOSTS', '').split(' ')
 ROOT_URLCONF = 'config.urls'
 WSGI_APPLICATION = 'config.wsgi.application'
@@ -32,8 +37,16 @@ USE_I18N = True
 USE_TZ = True
 
 # CSRF_COOKIE_SECURE = False
-CSRF_TRUSTED_ORIGINS=['http://localhost:8081']
-
+if PROJECT_PROTOCOL == 'http':
+    if int(PROJECT_PORT) == 80:
+        CSRF_TRUSTED_ORIGINS = [f'{PROJECT_PROTOCOL}://{PROJECT_DOMAIN}']
+    else:
+        CSRF_TRUSTED_ORIGINS = [f'{PROJECT_PROTOCOL}://{PROJECT_DOMAIN}:{PROJECT_PORT}']
+else:
+    if int(PROJECT_PORT_SSL) == 443:
+        CSRF_TRUSTED_ORIGINS = [f'{PROJECT_PROTOCOL}://{PROJECT_DOMAIN}']
+    else:
+        CSRF_TRUSTED_ORIGINS = [f'{PROJECT_PROTOCOL}://{PROJECT_DOMAIN}:{PROJECT_PORT_SSL}']
 
 # AUTH_USER_MODEL = 'main.User'
 # LOGIN_URL = "main:auth_login"

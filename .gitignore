@@ -1,4 +1,5 @@
 .venv/
+.env
 app/config/local/*
 app/logs/*
 app/locks/*
