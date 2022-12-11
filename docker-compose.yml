@@ -34,7 +34,7 @@ services:
       context: app
       dockerfile: Dockerfile
       args:
-        PIPENV_OPTIONS: "${PIPENV_OPTION}"
+        PIPENV_OPTIONS: "${PIPENV_OPTIONS}"
         PIPENV_KEEP_OUTDATED: "${PIPENV_KEEP_OUTDATED}"
     depends_on:
       - db
