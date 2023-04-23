@@ -47,14 +47,22 @@ It consists of 4 containers:
 
        popd
 
-4. Configure local docker-compose.yml
+4. Install pre-commit hooks
+
+    ```
+    brew install pre-commit
+    pre-commit install
+    ```
+    > NOTE: To bypass pre-commit hooks, use the `git commit ... --no-verify`.
+
+5. Configure local docker-compose.yml
 
     Configure or remove `db` and `nginx` sections if necessary. 
 
        cp docker-compose.override.yml.example.yml docker-compose.override.yml
        vi docker-compose.override.yml
 
-5. Build containers
+6. Build containers
 
        docker compose build
 
@@ -62,26 +70,27 @@ It consists of 4 containers:
    > binary psycopg2 library. In this case remove --keep-outdated
    > flag in .env (PIPENV_KEEP_OUTDATED)
 
-6. Start containers
+7. Start containers
 
        docker compose up -d
 
-7. Make initial django setup
+8. Make initial django setup
 
        docker compose exec app ./manage.py migrate
        docker compose exec app ./manage.py createsuperuser
 
-8. Check for web-interface
+9. Check for web-interface
 
-   open http://skeleton/admin/ and log in with chosen attributes
+   open http://127.0.0.X/admin/ and log in with chosen attributes
+   where X is your IP if you changed it in /etc/hosts or '1' otherwise.
 
-9. setup pycharm
+10. setup pycharm
 
-    1. open settings dialog
-    2. search for "python interpreter" section
-    3. click on link "Add interpreter"
-    4. choose "On Docker Compose"
-    5. follow instructions (select service 'app', ...)
+     1. open settings dialog
+     2. search for "python interpreter" section
+     3. click on link "Add interpreter"
+     4. choose "On Docker Compose"
+     5. follow instructions (select service 'app', ...)
 
 ## CSRF Protection
 
@@ -89,8 +98,8 @@ It consists of 4 containers:
 > don't forget to change it in `CSRF_TRUSTED_ORIGINS` variable
 > in `app/config/settings/__init__.py`
 
-#ip-conflicts
-## Conflicts while developing several projects
+
+## Conflicts while developing several projects {#ip-conflicts}
 
 Developing several projects we encounter conflicts in port bindings.
 We can solve this problem by changing ports or IP using `docker-compose.override.yml`.
@@ -104,3 +113,34 @@ Add loopback into /etc/hosts
 Then bring up this loopback interface up (for mac).
 
     sudo ifconfig lo0 alias 127.0.0.2 up
+
+## Adding new package to repository
+1. Add your package to `Pipenv` file. Be sure that you specified version if needed, or just add `"*"`. Also, put that package to `[dev-packages]` section if this package is used only in development (not in production environment).
+2. Lock you `Pipenv` file:
+```
+pipenv lock
+```
+3. Sync you virtual environment packages:
+```
+pipenv sync
+```
+
+
+## Frontend (React SPA)
+
+For that reasons you may want to put frontend in a separate repository:
+ - foreign team has no access to backend repository
+ - frontend developer does not need to install docker
+ - different teams may use different tools for frontend and backend development
+
+All you need from frontend is contents of a build directory which become a part of django app.
+
+So basic setup is:
+
+    cd $PRJ_NAME
+    git clone https://github.com/a-ruzin/react-frontend-skeletor-for-django frontend
+    cd frontend
+    rm -rf .git
+    git init
+    git add .
+    git commit -m 'initial commit'
