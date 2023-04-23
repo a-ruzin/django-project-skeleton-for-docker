@@ -36,6 +36,8 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
+AUTH_USER_MODEL = 'core.User'
+
 # CSRF_COOKIE_SECURE = False
 if PROJECT_PROTOCOL == 'http':
     if int(PROJECT_PORT) == 80:
