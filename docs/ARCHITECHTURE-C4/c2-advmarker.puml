@@ -1,0 +1,58 @@
+@startuml
+!include c4puml/C4_Container.puml
+
+!include c4puml/icons/react.puml
+!include c4puml/icons/django.puml
+!include c4puml/icons/postgresql.puml
+!include c4puml/icons/users.puml
+!include c4puml/icons/nginx.puml
+!include c4puml/icons/rabbitmq.puml
+
+LAYOUT_WITH_LEGEND()
+
+Person(user, "Пользователи", "Стратеги подготавливающие маркетинговый план для клиентов", $sprite="users")
+
+System_Boundary(aist, "AI-Strategist", "Система подачи отчетности по маркеровке рекламы в ОРД") {
+    Container(spa, "SPA", "react", "Пользовательский интерфейс", $sprite="react")
+    Container(nginx, "Nginx", "nginx", "Веб-сервер", $sprite="nginx")
+    Container(app, "API", "django", "Обрабатывает запросы пользовательского интерфейса", $sprite="django")
+    Container(static_nginx, "Nginx", "nginx", "Раздача статичных данных", $sprite="nginx")
+    Container(celery_worker, "Celery.Worker", "django", "Асинхронные задачи", $sprite="django")
+    Container(celery_beat, "Celery.Beat", "django", "Асинхронные задачи (регулярные)", $sprite="django")
+    Container(celery_flower, "Celery.Flower", "django", "Асинхронные задачи (интерфейс)")
+    ContainerDb(db, "Database", "Postgresql", "Holds product, order and invoice information", $sprite="postgresql")
+    ContainerDb(rabbitmq, "RabbitMQ", "RabbitMQ", "", $sprite="rabbitmq")
+    Container(filesystem, "filesystem", "fs", "общие файлы")
+}
+
+System_Ext(chatgpt, "ChatGPT", "ChatGPT", "ChatGPT")
+
+Rel(user, spa, "Uses", "https")
+Rel(user, nginx, "Uses", "https")
+
+Rel_R(spa, nginx, "Uses", "https")
+
+Rel(nginx, static_nginx, "proxy to static nginx", "proxy")
+Rel(nginx, app, "sgi calls", "gunicorn")
+
+Rel(static_nginx, filesystem, "Reads")
+
+Rel(app, db, "Reads/Writes")
+Rel(app, filesystem, "Reads/Writes")
+Rel_U(app, rabbitmq, "Reads/Writes")
+
+Rel(rabbitmq, celery_worker, "Reads/Writes")
+
+Rel(celery_worker, db, "Reads/Writes")
+Rel_U(celery_worker, rabbitmq, "Reads/Writes")
+Rel(celery_worker, filesystem, "Reads/Writes")
+Rel(celery_worker, chatgpt, "https")
+
+Rel(celery_beat, db, "Reads/Writes")
+Rel_U(celery_beat, rabbitmq, "Reads/Writes")
+Rel(celery_beat, filesystem, "Reads/Writes")
+
+Rel(celery_flower, db, "Reads")
+Rel_R(celery_flower, rabbitmq, "Reads")
+
+@enduml

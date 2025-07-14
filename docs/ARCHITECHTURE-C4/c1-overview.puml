@@ -1,0 +1,26 @@
+@startuml
+!include c4puml/C4_Container.puml
+
+!include c4puml/icons/users.puml
+
+LAYOUT_WITH_LEGEND()
+
+Person(user, "Customer", "Strategists who create strategies", $sprite="users")
+
+System(aist, "AI-Strategist", "The main application")
+
+System_Boundary(ords, "AI-Chats") {
+    System_Ext(chatgpt, "ChatGPT", "ChatGPT")
+    System_Ext(etc, "etc.", "Другие ОРД")
+}
+
+System_Boundary(auths, "Auths") {
+    System_Ext(kokocid, "KokocID", "KokocID")
+}
+
+Rel(user, aist, "Uses", "https")
+
+Rel(aist, chatgpt, "Uses", "https")
+Rel_R(aist, kokocid, "Uses", "https")
+
+@enduml
