@@ -9,6 +9,8 @@ app/media/*
 app/static/*
 !app/media/.gitignore
 docker-compose.override.yml
+frontend/
+tmp/
 
 ### Django ###
 *.log
