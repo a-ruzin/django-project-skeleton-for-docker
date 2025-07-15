@@ -144,3 +144,19 @@ So basic setup is:
     git init
     git add .
     git commit -m 'initial commit'
+
+
+
+## Next steps
+remove all the content above and leave (tuned) following part:
+
+# Project
+
+Project - инструмент ...
+
+
+- [Архитектура](docs/ARCHITECHTURE-C4/README.md).
+- [Установка (для локальной разработки)](docs/installation_local_dev.md).
+- [Установка (для продакшн)](docs/installation_production.md).
+- [Локализация](docs/localization.md).
+
