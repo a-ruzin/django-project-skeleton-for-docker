@@ -11,7 +11,7 @@ class CoreModel(CoreBaseModel):
     class Meta:
         abstract = True
 
-    created_at = models.DateTimeField(_('дата создания'), auto_now_add=True)
-    updated_at = models.DateTimeField(_('дата последнего изменения'), auto_now=True)
+    created_at = models.DateTimeField(_("дата создания"), auto_now_add=True)
+    updated_at = models.DateTimeField(_("дата последнего изменения"), auto_now=True)
 
     __repr__ = model_repr("id")
