@@ -1,5 +1,3 @@
-__all__ = ["CoreBaseCommandLocked"]
-
 import fcntl
 import os
 import sys

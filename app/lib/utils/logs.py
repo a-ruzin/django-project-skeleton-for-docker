@@ -1,6 +1,3 @@
-__all__ = ["get_command_folder_rotating_file_handler"]
-
-
 def get_command_folder_rotating_file_handler(**kwargs):
     from django.conf import settings
     import sys

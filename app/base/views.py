@@ -1,5 +1,3 @@
-__all__ = ['BaseApiResponseMixin', 'AistAPIError']
-
 import logging
 from typing import TYPE_CHECKING, Any
 
@@ -15,7 +13,7 @@ if TYPE_CHECKING:
 logger = logging.getLogger('django.request')
 
 
-class AistAPIError(APIException):
+class BaseAPIError(APIException):
     pass
 
 

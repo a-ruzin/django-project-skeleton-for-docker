@@ -2,7 +2,7 @@
 ifneq ("$(wildcard .env)","")
 export $(shell sed 's/=.*//' .env)  # Export all variables to subprocesses
 endif
-.PHONY: all test testv dcrb clean_db dump_db restore_db up down build migrate migrations static shell check_db_container_is_running
+.PHONY: all test testv dcrb clean_db dump_db restore_db up down build migrate migrations static shell check_db_container_is_running nginx
 
 MAIN_BRANCH=main
 DEFAULT_DB_DUMP_FILE=deploy/data/backup/db/dump.sql.gz
@@ -221,3 +221,6 @@ test:
 
 testv:
 	@docker compose exec app pytest -vv $(ARGS)
+
+nginx:
+	@docker compose exec nginx sh

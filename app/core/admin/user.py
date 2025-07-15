@@ -1,5 +1,3 @@
-__all__ = ['CustomUserAdmin']
-
 from typing import Any, TypeAlias, cast
 
 from django.contrib import admin
@@ -16,17 +14,31 @@ fieldsets: TypeAlias = tuple[tuple[Any | None, dict[str, tuple[str, ...]]], ...]
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
     model = User
-    search_fields = ('id', 'email', 'name')
+    search_fields = ("id", "email", "first_name", "last_name", "phone")
 
-    list_display = ['id', 'email', 'created_at', 'name', 'is_staff', 'is_superuser', 'is_active']
-    list_filter = ['is_staff', 'is_active', 'is_superuser']
-    list_display_links = ('email',)
-    readonly_fields = ['created_at', 'last_login']
-    ordering = ['-created_at']
+    list_display = [
+        "id",
+        "email",
+        "created_at",
+        "full_name",
+        "phone",
+        "is_staff",
+        "is_superuser",
+        "is_active",
+    ]
+    list_filter = ["is_staff", "is_active", "is_superuser"]
+    list_display_links = ("email",)
+    readonly_fields = ["created_at", "last_login"]
+    ordering = ["-created_at"]
     list_per_page = 50
-    filter_horizontal = ['groups', 'user_permissions']
+    filter_horizontal = ["groups", "user_permissions"]
 
-    add_fieldsets = ((None, {'classes': ('wide',), 'fields': ('email', 'name', 'password1', 'password2')}),)
+    add_fieldsets = (
+        (
+            None,
+            {"classes": ("wide",), "fields": ("email", "first_name", "last_name", "phone", "password1", "password2")},
+        ),
+    )
 
     def get_fieldsets(self, request: HttpRequest, obj: models.Model | None = None) -> fieldsets:
         if not obj:
@@ -34,19 +46,18 @@ class CustomUserAdmin(UserAdmin):
 
         if request.user.is_superuser:
             permissions_fields: tuple[str, ...] = (
-                'is_active',
-                'is_staff',
-                'is_superuser',
-                'groups',
-                'user_permissions',
+                "is_active",
+                "is_staff",
+                "is_superuser",
+                "groups",
+                "user_permissions",
             )
         else:
-            permissions_fields = ('is_active',)
+            permissions_fields = ("is_active",)
 
         return (
-            (None, {'fields': ('email', 'password')}),
-            (_('Personal info'), {'fields': ('name',)}),
-            (_('Permissions'), {'fields': permissions_fields}),
-            (_('Видимость данных в ЛК'), {'fields': ('business_group', 'business_units')}),
-            (_('Important dates'), {'fields': ('last_login', 'created_at')}),
+            (None, {"fields": ("email", "password")}),
+            (_("Персональная информация"), {"fields": ("first_name", "last_name", "phone", "language")}),
+            (_("Разрешения"), {"fields": permissions_fields}),
+            (_("Даты"), {"fields": ("last_login", "created_at")}),
         )

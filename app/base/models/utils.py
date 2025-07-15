@@ -1,5 +1,3 @@
-__all__ = ["model_repr"]
-
 from typing import Callable, Type
 
 """

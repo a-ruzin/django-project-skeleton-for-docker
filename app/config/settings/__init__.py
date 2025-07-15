@@ -114,7 +114,6 @@ INSTALLED_APPS = [
     'django_celery_results',
     "core",
     "django_translatemessages",
-    "admin_auto_filters",
 ]
 
 MIDDLEWARE = [

@@ -1,12 +1,10 @@
-__all__ = ['UserManager']
-
 from typing import Any
 
 from django.contrib.auth.base_user import BaseUserManager
 from django.db import models
 
 from base.models.managers.core_base_manager import CoreBaseManager
-from core.models.querysets.user import UserQuerySet
+from core.models.querysets.user_queryset import UserQuerySet
 
 
 class UserManager(CoreBaseManager, models.Manager.from_queryset(UserQuerySet), BaseUserManager):  # type: ignore

@@ -1,1 +1,2 @@
 from .core_base_queryset import CoreBaseQuerySet
+from .soft_deletion_queryset import SoftDeletionQuerySet

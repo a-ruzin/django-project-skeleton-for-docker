@@ -1,5 +1,3 @@
-__all__ = ("SoftDeletionQuerySet",)
-
 from typing import Any
 
 from django.utils import timezone

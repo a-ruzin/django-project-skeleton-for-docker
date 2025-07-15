@@ -1,5 +1,3 @@
-__all__ = ("SoftDeletionManager",)
-
 from typing import Any
 
 from ..querysets.soft_deletion_queryset import SoftDeletionQuerySet

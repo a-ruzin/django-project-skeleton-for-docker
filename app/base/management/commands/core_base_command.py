@@ -1,5 +1,3 @@
-__all__ = ["CoreBaseCommand", "CoreBaseCommandError"]
-
 import logging.config
 import sys
 import time

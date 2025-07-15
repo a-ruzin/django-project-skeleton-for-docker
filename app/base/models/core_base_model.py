@@ -1,5 +1,3 @@
-__all__ = ["CoreBaseModel"]
-
 from django.db import models
 
 from .managers import CoreBaseManager

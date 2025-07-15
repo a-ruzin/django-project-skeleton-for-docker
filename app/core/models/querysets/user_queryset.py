@@ -1,5 +1,3 @@
-__all__ = ['UserQuerySet']
-
 from typing import Any
 
 from base.models.querysets.core_base_queryset import CoreBaseQuerySet
