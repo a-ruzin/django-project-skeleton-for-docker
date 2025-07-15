@@ -22,7 +22,7 @@ copy_defaults() {
     mkdir -p "$output_dir/$subdir"
     if [ ! -f "$output_path" -o "$template" -nt "$output_path" ]; then
       echo >&3 "$ME: Copying default $template to $output_path"
-      cp "$template" "$output_path"
+      envsubst '$PROJECT_DOMAIN $PROJECT_PORT' < "$template" > "$output_path"
     fi
   done
 }
