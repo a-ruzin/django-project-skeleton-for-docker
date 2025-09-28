@@ -14,7 +14,7 @@ It consists of 4 containers:
 
        # DISCLAMER: used with [fish shell](https://fishshell.com/)
        set PRJ_NAME prj
-       git clone https://github.com/a-ruzin/django-project-skeleto-for-docker $PRJ_NAME
+       git clone git@github.com:a-ruzin/django-project-skeleton-for-docker.git $PRJ_NAME
        cd $PRJ_NAME
 
 2. Untie from GitHub and create local repository
@@ -159,4 +159,3 @@ Project - инструмент ...
 - [Установка (для локальной разработки)](docs/installation_local_dev.md).
 - [Установка (для продакшн)](docs/installation_production.md).
 - [Локализация](docs/localization.md).
-

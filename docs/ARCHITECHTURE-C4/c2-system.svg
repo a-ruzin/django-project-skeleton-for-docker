@@ -1,0 +1,583 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css"
+     data-diagram-type="DESCRIPTION" height="1079px" preserveAspectRatio="none"
+     style="width:1142px;height:1079px;background:#FFFFFF;" version="1.1" viewBox="0 0 1142 1079" width="1142px"
+     zoomAndPan="magnify">
+    <defs/>
+    <g><!--cluster aist-->
+        <g class="cluster" data-entity="aist" data-source-line="1660" data-uid="ent0003" id="cluster_aist">
+            <rect fill="none" height="709.81" style="stroke:#444444;stroke-width:1;stroke-dasharray:7,7;" width="972"
+                  x="7" y="202.82"/>
+            <text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="64.4375" x="460.7813" y="220.2888">SYSTEM
+            </text>
+            <text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="52.9922" x="466.5039" y="235.2653">[system]
+            </text>
+        </g><!--entity spa-->
+        <g class="entity" data-entity="spa" data-source-line="76" data-uid="ent0004" id="entity_spa">
+            <rect fill="#438DD5" height="150.4414" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;"
+                  width="147.0459" x="29.48" y="253.82"/>
+            <image height="48" width="48" x="79.0029"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADYElEQVR4XtWYv2pVQRDG827a5wV8AF/AB0hnEysrsbNIkTKdlaQT0liIRBACEggIigoRQTjyC3zyMbN7ds5VL+zCj3vvt2f/zc7O7LkH947fHsxMEmYjCbORhNlIwmwkYTaSMBtJ2MKTl9fLyetPC58PX3y4iPU9eNbbxvotJKHCg+fvH3/78WuJ5fLmdnUh1PFMLNdffi6HT9/dj89XSEIFTeLZ+c3CYh6dXi1nbz7/mRCWjW28nu+0oS19UC6uvqc2FZIwgkF7A2JFLU71rvFJ+9ju1eXXu/pddiEJI47OPt4Ntua77AAF1wAKVo/PxT7ZlVg3IgkjmHhlMC2C0nIph74oa0bpkYQR1QX4YeV7rHc43HtbgLabz1gn5NO4jQ5v68xs6bNHEkbIWkSPWAetqML3Spu1ENwjCRUYDCvrt0Kp3Ev12gHtCIXJMlGPOHuNQqAk1kpKWwr90AefEMepkIQeWFiu4IUJYGWFSyIOOwJYFPTbwytt6M8zOt/RW7miRxIiTDxGFB1MhUclNyYW20e0UPm7/J8+fRwWVzkTSXA8lkfLYC1NWDvjA2J5Fg/u2woCCq304e7DGH7t6B18kQShTnrp33eB4oeaSUfX8LyhQ6u2rSzNmNqRtUSYBIhWaiG3UdEisXbrpoqmnei1jfg9qvdMEkCWGWVbuY5bUNeCVvH+KgnO++u5UhKgugBZ528WsLbL3l/PjZIAFRfSMyrxgMcSD6rX9dwDZKReREqC8JjdavwvDrGH0Ni/H+JWvUiCowEoDOoL8eypsxBdTmE0ahT5fiuM+tWj5zoiCREm7RmYAT0MalDVxfYRJTK5jYxEnzFhxsW3SEIPJZjo362rBIvmeQfN3TJOWAVjVSYuklBB7hPvMrsUFuHuuJUkjCC5MLAfWsDCfp1mV7A4+NVA/yG1rtNxrApJGDFKLFpE64Wm98q41xeayutf65Uy7tjWPnskYcT/eKnXrvZ2aI0kjKguwK/io1i+1wVUBpPbVP/YqhqlRRJGKAq1bpGe/lXP8zrE1LXuPapv1Y1IQgUN6H/ujtK/uxS7QRvaKgKNzkmPJFTAqnINL6P3WOpa2Zcktov1IQlbwIr4L+FvywSU9NiVtbNUIQmzkYTZSMJsJGE2kjAbSZiNJMzGb3yBECSLtjQtAAAAAElFTkSuQmCC"
+                   y="263.82"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="30.7344" x="87.6358" y="327.2888">SPA
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="36.6621" x="84.6719" y="342.2653">[react]
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="100.7881" y="358.3317">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127.0459"
+                  x="39.48" y="374.82">&#1055;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1090;&#1077;&#1083;&#1100;&#1089;&#1082;&#1080;&#1081;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75.6465"
+                  x="65.1797" y="391.3083">&#1080;&#1085;&#1090;&#1077;&#1088;&#1092;&#1077;&#1081;&#1089;
+            </text>
+        </g><!--entity nginx-->
+        <g class="entity" data-entity="nginx" data-source-line="76" data-uid="ent0005" id="entity_nginx">
+            <rect fill="#438DD5" height="133.9531" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;"
+                  width="100.042" x="249.98" y="262.06"/>
+            <image height="48" width="48" x="276.001"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABwUlEQVR4XtWUsUoDQRRF82/a+wN+gD/gB6Sz0cpK7CwsLNNZiZ2QxkIkghCQQEAwqKAIwupZufKcqzZJcx8cdufMzM57s7M7WNu9GiRjIg0TaZhIw0QaJtIwkYaJNEykYSINE2mYSMNEGibSMJGGiTRMpGEiDRNpmEjDxKrZ2L9eb90qMVEZT5+7p9f3bvPwZkdu6+h23H2G3NnkkeaPUNLD0V0/n/vZ4q07OJ/39+3zGc91dPnw3Y+bzF86aPOqmKiwKMG1JkVQiIph4b3TWQ+JUBRjaRPca5yeXQtXsgSettY+vrhfrgAgKXYLVwtgUfrrnO2TaZ8oSegezxzd8yYInkkwthahqAX/hYmKEq87rQJ0JRn6GVehH1R4O595KkTHkWsvuq+33ubzGyYqded1HLRrJM3rZiEWJjnazCHY0fYIaYfbN8H8emz0DB3F/zBRqQUA51FBAdoxPMcFCH2sbQFE/ShrAbW4epyW+gZIvn0AC+jPQZt+2qK+egpSwjpa9bdKv34QzK1r4TSnzatiIg0TaZhIw0QaJtIwkYaJNEykYSINE2mYSMNEGibSMJGGiTRMpGEiDRNpmEjDRBof4j8ig8QWx9gAAAAASUVORK5CYII="
+                   y="272.06"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="48.0156" x="275.9932" y="335.5287">Nginx
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="41.0098" x="279.4961" y="350.5053">[nginx]
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="297.7862" y="366.5717">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80.042"
+                  x="259.98" y="383.06">&#1042;&#1077;&#1073;-&#1089;&#1077;&#1088;&#1074;&#1077;&#1088;
+            </text>
+        </g><!--entity app-->
+        <g class="entity" data-entity="app" data-source-line="76" data-uid="ent0006" id="entity_app">
+            <rect fill="#438DD5" height="166.9297" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;"
+                  width="181.0479" x="266.48" y="494.26"/>
+            <image height="48" width="48" x="333.0039"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACSUlEQVR4XtWVv0pcURjE77slvS+QB8gL5AHsbLRKFexSWFhuZyV2gk2KEAwIQlhYEBQVFEG48lsyy+eZe3cvQYLzwXD3zPnO+WbOv+0+7P7skmFEGoxIgxFpMCINRqTBiDQYkQYj0mBEGoxIgxFpMCINRqTBiDQYkQYjwKf93zvzm6ce7B3Nezi1v50slu33AiMABvq/IcFqz35cZxo4Xzz0IHYH3itWPw5Or5ZnvA0Z0B0gj/b27E9/dnnf3z0+L/P46nixAPxmx2rQ/vz94qwKoH18fvuqNnOR++Xwst/6+usjc6kOQT78ykBbqMbYHRgyS2CMwutCxVmMsUAweWN14JcGeGUUOGP1qoAxA/DkaSVrfjseIVUs/TWHnWQnyFXQrtoY385DfodohcQM3QG16yvEardHpTVADrktN1S3CkbsUE7VQn+H+zZpioGxYzdmgBWtnMZzVMYMDGmrWujvEKTQBWsNMJnabGEVqGMkQVMN1NWl3pCBqk05VRv9ryYmcFWdbzJAUQTpsk0xoDEKdqF9iahZ59ELWHOY07auDQRV17pM9VmrMdUAXF3hNja9VDraq3PFAIoxOZ18EdKuhIrDK1f5jMes+oC2foiTMfHVkPqVgxH6taDqWyWtQ72wdfBbQ0e3XuxNMKICsVU857TN+Vfo+eXL6tY6+refAiNa6ILW9/8tMHb+2YU2dx2M+F9gd1lpdhVgqP6zT4URaTAiDUakwYg0GJEGI9JgRBqMSIMRaTAiDUakwYg0GJEGI9JgRBpeAE7D/X5Mx3BUAAAAAElFTkSuQmCC"
+                   y="504.26"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="26.8984" x="343.5547" y="567.7288">API
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="47.9355" x="333.0362" y="582.7053">[django]
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="354.7891" y="598.7717">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98.6836"
+                  x="276.48" y="615.26">&#1054;&#1073;&#1088;&#1072;&#1073;&#1072;&#1090;&#1099;&#1074;&#1072;&#1077;&#1090;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="375.1636" y="615.26">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57.9346"
+                  x="379.5933" y="615.26">&#1079;&#1072;&#1087;&#1088;&#1086;&#1089;&#1099;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132.0977"
+                  x="290.9551" y="631.7483">&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1090;&#1077;&#1083;&#1100;&#1089;&#1082;&#1086;&#1075;&#1086;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83.3779"
+                  x="315.315" y="648.2366">&#1080;&#1085;&#1090;&#1077;&#1088;&#1092;&#1077;&#1081;&#1089;&#1072;
+            </text>
+        </g><!--entity static_nginx-->
+        <g class="entity" data-entity="static_nginx" data-source-line="76" data-uid="ent0007" id="entity_static_nginx">
+            <rect fill="#438DD5" height="133.9531" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;"
+                  width="208.9727" x="22.51" y="510.75"/>
+            <image height="48" width="48" x="102.9963"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABwUlEQVR4XtWUsUoDQRRF82/a+wN+gD/gB6Sz0cpK7CwsLNNZiZ2QxkIkghCQQEAwqKAIwupZufKcqzZJcx8cdufMzM57s7M7WNu9GiRjIg0TaZhIw0QaJtIwkYaJNEykYSINE2mYSMNEGibSMJGGiTRMpGEiDRNpmEjDxKrZ2L9eb90qMVEZT5+7p9f3bvPwZkdu6+h23H2G3NnkkeaPUNLD0V0/n/vZ4q07OJ/39+3zGc91dPnw3Y+bzF86aPOqmKiwKMG1JkVQiIph4b3TWQ+JUBRjaRPca5yeXQtXsgSettY+vrhfrgAgKXYLVwtgUfrrnO2TaZ8oSegezxzd8yYInkkwthahqAX/hYmKEq87rQJ0JRn6GVehH1R4O595KkTHkWsvuq+33ubzGyYqded1HLRrJM3rZiEWJjnazCHY0fYIaYfbN8H8emz0DB3F/zBRqQUA51FBAdoxPMcFCH2sbQFE/ShrAbW4epyW+gZIvn0AC+jPQZt+2qK+egpSwjpa9bdKv34QzK1r4TSnzatiIg0TaZhIw0QaJtIwkYaJNEykYSINE2mYSMNEGibSMJGGiTRMpGEiDRNpmEjDRBof4j8ig8QWx9gAAAAASUVORK5CYII="
+                   y="520.75"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="48.0156" x="102.9885" y="584.2188">Nginx
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="41.0098" x="106.4914" y="599.1953">[nginx]
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="124.7815" y="615.2617">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54.4004"
+                  x="32.51" y="631.75">&#1056;&#1072;&#1079;&#1076;&#1072;&#1095;&#1072;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="86.9104" y="631.75">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72.3242"
+                  x="91.3401" y="631.75">&#1089;&#1090;&#1072;&#1090;&#1080;&#1095;&#1085;&#1099;&#1093;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="163.6643" y="631.75">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53.3887"
+                  x="168.094" y="631.75">&#1076;&#1072;&#1085;&#1085;&#1099;&#1093;
+            </text>
+        </g><!--entity celery_worker-->
+        <g class="entity" data-entity="celery_worker" data-source-line="76" data-uid="ent0008"
+           id="entity_celery_worker">
+            <rect fill="#438DD5" height="133.9531" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;"
+                  width="167.9639" x="686.02" y="510.75"/>
+            <image height="48" width="48" x="746.0019"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACSUlEQVR4XtWVv0pcURjE77slvS+QB8gL5AHsbLRKFexSWFhuZyV2gk2KEAwIQlhYEBQVFEG48lsyy+eZe3cvQYLzwXD3zPnO+WbOv+0+7P7skmFEGoxIgxFpMCINRqTBiDQYkQYj0mBEGoxIgxFpMCINRqTBiDQYkQYjwKf93zvzm6ce7B3Nezi1v50slu33AiMABvq/IcFqz35cZxo4Xzz0IHYH3itWPw5Or5ZnvA0Z0B0gj/b27E9/dnnf3z0+L/P46nixAPxmx2rQ/vz94qwKoH18fvuqNnOR++Xwst/6+usjc6kOQT78ykBbqMbYHRgyS2CMwutCxVmMsUAweWN14JcGeGUUOGP1qoAxA/DkaSVrfjseIVUs/TWHnWQnyFXQrtoY385DfodohcQM3QG16yvEardHpTVADrktN1S3CkbsUE7VQn+H+zZpioGxYzdmgBWtnMZzVMYMDGmrWujvEKTQBWsNMJnabGEVqGMkQVMN1NWl3pCBqk05VRv9ryYmcFWdbzJAUQTpsk0xoDEKdqF9iahZ59ELWHOY07auDQRV17pM9VmrMdUAXF3hNja9VDraq3PFAIoxOZ18EdKuhIrDK1f5jMes+oC2foiTMfHVkPqVgxH6taDqWyWtQ72wdfBbQ0e3XuxNMKICsVU857TN+Vfo+eXL6tY6+refAiNa6ILW9/8tMHb+2YU2dx2M+F9gd1lpdhVgqP6zT4URaTAiDUakwYg0GJEGI9JgRBqMSIMRaTAiDUakwYg0GJEGI9JgRBpeAE7D/X5Mx3BUAAAAAElFTkSuQmCC"
+                   y="520.75"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="114.6328" x="712.6855" y="584.2188">Celery.Worker
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="47.9355" x="746.0342" y="599.1953">[django]
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="767.7871" y="615.2617">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95.833"
+                  x="696.02" y="631.75">&#1040;&#1089;&#1080;&#1085;&#1093;&#1088;&#1086;&#1085;&#1085;&#1099;&#1077;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="791.853" y="631.75">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47.7012"
+                  x="796.2827" y="631.75">&#1079;&#1072;&#1076;&#1072;&#1095;&#1080;
+            </text>
+        </g><!--entity celery_beat-->
+        <g class="entity" data-entity="celery_beat" data-source-line="76" data-uid="ent0009" id="entity_celery_beat">
+            <rect fill="#438DD5" height="150.4414" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;"
+                  width="167.9639" x="483.02" y="502.5"/>
+            <image height="48" width="48" x="543.0019"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACSUlEQVR4XtWVv0pcURjE77slvS+QB8gL5AHsbLRKFexSWFhuZyV2gk2KEAwIQlhYEBQVFEG48lsyy+eZe3cvQYLzwXD3zPnO+WbOv+0+7P7skmFEGoxIgxFpMCINRqTBiDQYkQYj0mBEGoxIgxFpMCINRqTBiDQYkQYjwKf93zvzm6ce7B3Nezi1v50slu33AiMABvq/IcFqz35cZxo4Xzz0IHYH3itWPw5Or5ZnvA0Z0B0gj/b27E9/dnnf3z0+L/P46nixAPxmx2rQ/vz94qwKoH18fvuqNnOR++Xwst/6+usjc6kOQT78ykBbqMbYHRgyS2CMwutCxVmMsUAweWN14JcGeGUUOGP1qoAxA/DkaSVrfjseIVUs/TWHnWQnyFXQrtoY385DfodohcQM3QG16yvEardHpTVADrktN1S3CkbsUE7VQn+H+zZpioGxYzdmgBWtnMZzVMYMDGmrWujvEKTQBWsNMJnabGEVqGMkQVMN1NWl3pCBqk05VRv9ryYmcFWdbzJAUQTpsk0xoDEKdqF9iahZ59ELWHOY07auDQRV17pM9VmrMdUAXF3hNja9VDraq3PFAIoxOZ18EdKuhIrDK1f5jMes+oC2foiTMfHVkPqVgxH6taDqWyWtQ72wdfBbQ0e3XuxNMKICsVU857TN+Vfo+eXL6tY6+refAiNa6ILW9/8tMHb+2YU2dx2M+F9gd1lpdhVgqP6zT4URaTAiDUakwYg0GJEGI9JgRBqMSIMRaTAiDUakwYg0GJEGI9JgRBpeAE7D/X5Mx3BUAAAAAElFTkSuQmCC"
+                   y="512.5"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="91.25" x="521.3769" y="575.9688">Celery.Beat
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="47.9355" x="543.0342" y="590.9453">[django]
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="564.7871" y="607.0117">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95.833"
+                  x="493.02" y="623.5">&#1040;&#1089;&#1080;&#1085;&#1093;&#1088;&#1086;&#1085;&#1085;&#1099;&#1077;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="588.853" y="623.5">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47.7012"
+                  x="593.2827" y="623.5">&#1079;&#1072;&#1076;&#1072;&#1095;&#1080;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91.1641"
+                  x="521.4199" y="639.9883">(&#1088;&#1077;&#1075;&#1091;&#1083;&#1103;&#1088;&#1085;&#1099;&#1077;)
+            </text>
+        </g><!--entity celery_flower-->
+        <g class="entity" data-entity="celery_flower" data-source-line="76" data-uid="ent0010"
+           id="entity_celery_flower">
+            <rect fill="#438DD5" height="102.4414" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;"
+                  width="167.9639" x="795.02" y="277.82"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="110.9688" x="823.5176" y="303.2888">Celery.Flower
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="47.9355" x="855.0342" y="318.2653">[django]
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="876.7871" y="334.3317">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95.833"
+                  x="805.02" y="350.82">&#1040;&#1089;&#1080;&#1085;&#1093;&#1088;&#1086;&#1085;&#1085;&#1099;&#1077;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="900.853" y="350.82">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47.7012"
+                  x="905.2827" y="350.82">&#1079;&#1072;&#1076;&#1072;&#1095;&#1080;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84.752"
+                  x="836.626" y="367.3083">(&#1080;&#1085;&#1090;&#1077;&#1088;&#1092;&#1077;&#1081;&#1089;)
+            </text>
+        </g><!--entity db-->
+        <g class="entity" data-entity="db" data-source-line="80" data-uid="ent0011" id="entity_db">
+            <path d="M616.52,747.19 C616.52,737.19 710.0005,737.19 710.0005,737.19 C710.0005,737.19 803.4809,737.19 803.4809,747.19 L803.4809,886.6314 C803.4809,896.6314 710.0005,896.6314 710.0005,896.6314 C710.0005,896.6314 616.52,896.6314 616.52,886.6314 L616.52,747.19"
+                  fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/>
+            <path d="M616.52,747.19 C616.52,757.19 710.0005,757.19 710.0005,757.19 C710.0005,757.19 803.4809,757.19 803.4809,747.19"
+                  fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/>
+            <image height="48" width="48" x="686.0005"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADNElEQVR4XtWXvYpUQRCF99009wV8AF/ABzAz0chIzAw2MNzMSMyETQxEVhAWZGFBUFRQBGHkWzhLc07/7c6doC98zNwz/VNVXdXdc3TnyYejlQlhNUJYjRBWI4TVCGE1QliNEA7NvWcf7z58db57dPJl9/T1xRW8o3vbGULowaSn5792P//8u4Ln4vvfK+3528vdg5efT2mHUWjlQ3va8pxd/t6dvP92jdryiTM+b48QahAdJmUCnLj/4tNj6XxHO3739drAmiG0k2M4Qx+fB40x3pz9iN9ahFCDQYmw685sO5yjLU77b4ADBMz1GiE4RG0mIkoH11toVVt9ZscLwSFSyu0WGENauD4DThAk1xmTdHTdCcEHmTGMtGmlwwhqgzlUVyXoo90phBIiP5OLFOZolXoQgFq67L0CGIVxrjszE7UgwszDGGW0N0mhmRVQmvkZMUopxqa+yvOhXMWZuSGEkpkaIHeZnMnYHoGUaBWn0JZL6jAG7cs6aKWVE4IzKiRNrnccYNsdbb9KDx14Po8OTe/nhODUTtUSd6DUibLrwvN79N4iBIdc7p2uLQegZ4RHuGyrevI+NUJwiH5vsF6x9RzwFCvbunM9QqjRM6Tl4Mw2WB5gpBvfdbB52xYh1OjVQWu5ad9aGUFqahXkAO+9lHVCqNHb0rSfu077GUOINmPwidM3iT6EUGO0rLULn2+LLagF+gMrOeN0SQgtSAc3Uihy+p206p0BDmNDbSVHhNDCdw1H1wEZQtuZFQAc5lH0dT9q1V1JCD3KXaMEY+WcjMGRVvsS5T81oyDwDjyj/iH0qK0CBx3GEjVtqWozU8j0Ly9+jKP/xqMLIYQwAmNlFJ+aSFHXBU6RHTmAkzy6mfIQgFa9OSGMIEIYKoN5Z0I5or0dY0pnW+jUZZzZmikJ4bboGo0TrALGjO5RoAPM9VlC2BLP7xqspGs3IYQtGTkw84dpRAhbopRyXfRusrOEsCXUQusOBTc9sWuEsCWtq7aYOSdGhLAloxyfOalHhLA1pIinEbnPyrh+G0I4BBir67JO3H1TR4RwKEgVamLflHFCWI0QViOE1QhhNUJYjRBW4z9R+yvPl2qDkQAAAABJRU5ErkJggg=="
+                   y="761.19"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="76.4141" x="671.7934" y="824.6587">Database
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="68.6309" x="675.685" y="839.6353">[Postgresql]
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="707.7856" y="855.7017">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82.8379"
+                  x="626.52" y="872.19">&#1055;&#1086;&#1089;&#1090;&#1086;&#1103;&#1085;&#1085;&#1086;&#1077;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="709.3579" y="872.19">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79.6934"
+                  x="713.7876" y="872.19">&#1093;&#1088;&#1072;&#1085;&#1080;&#1083;&#1080;&#1097;&#1077;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53.3887"
+                  x="683.3061" y="888.6783">&#1076;&#1072;&#1085;&#1085;&#1099;&#1093;
+            </text>
+        </g><!--entity rabbitmq-->
+        <g class="entity" data-entity="rabbitmq" data-source-line="80" data-uid="ent0012" id="entity_rabbitmq">
+            <path d="M620.48,284.05 C620.48,274.05 670.9995,274.05 670.9995,274.05 C670.9995,274.05 721.5191,274.05 721.5191,284.05 L721.5191,374.0266 C721.5191,384.0266 670.9995,384.0266 670.9995,384.0266 C670.9995,384.0266 620.48,384.0266 620.48,374.0266 L620.48,284.05"
+                  fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/>
+            <path d="M620.48,284.05 C620.48,294.05 670.9995,294.05 670.9995,294.05 C670.9995,294.05 721.5191,294.05 721.5191,284.05"
+                  fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/>
+            <image height="48" width="48" x="646.9995"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABXElEQVR4XtWWwUlEURAENzfjMw5jMQCjMAhlD3OpavQxow+moS5F08we9vEfL68fj81IbENiGxLbkNiGxDYktiGxDQny9v75xTwde93+FAnCYyrsdftTJAgPqbDX7U+RIDykwl63P0WC8JAKe93+FAnCQyrsdftTJAgPqbDX7U+RIDykwl63P0WC8JAKe93+FAnCQyrsdftTJAgPqbDX7U+RIDykwl63P0WC8JBK+r5J30GV1P8LJAgPuZXTHyxBOHwzvCUhQTh6M7wlIUE4ejO8JSFBOHozvCUhQTh6M7wlIUE42k16VX56dp9hPyFBONoNd0/22U1IEI52w92TfXYTEoSj3XD3ZJ/dhAThaDfcPdlnNyFBONrN+j9xJ7wlIUE4ejO8JSFBOHozvCUhQTh6M7wlIUE4ejO8JSFBfnsp/ivp1UpIbENiGxLbkNiGxDYktiGxDYltSGzjGy5dCCs98XP5AAAAAElFTkSuQmCC"
+                   y="298.05"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="81.0391" x="630.48" y="361.5187">RabbitMQ
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="64.7402" x="638.6294" y="376.4953">[RabbitMQ]
+            </text>
+        </g><!--entity filesystem-->
+        <g class="entity" data-entity="filesystem" data-source-line="76" data-uid="ent0013" id="entity_filesystem">
+            <rect fill="#438DD5" height="85.9531" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;"
+                  width="115.8604" x="280.07" y="773.93"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="85.2109" x="295.3947" y="799.3988">filesystem
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="18.334" x="328.8332" y="814.3753">[fs]
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="335.7853" y="830.4417">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45.7461"
+                  x="290.07" y="846.93">&#1086;&#1073;&#1097;&#1080;&#1077;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="335.8161" y="846.93">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45.6846"
+                  x="340.2458" y="846.93">&#1092;&#1072;&#1081;&#1083;&#1099;
+            </text>
+        </g><!--entity user-->
+        <g class="entity" data-entity="user" data-source-line="379" data-uid="ent0002" id="entity_user">
+            <rect fill="#08427B" height="119.8203" style="stroke:#073B6F;stroke-width:0.5;" width="177.2607" x="112.37"
+                  y="7"/>
+            <image height="48" width="48" x="177.0004"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACo0lEQVR4Xu2Xv2qVQRDFU+YRfARfIa3YpPEBzAMI1napgo2glmlCsNRGsLCxEUwrSWUlgpWWpkiR9gu/C3PZOzO7s7vfpljwwIHk3L2783/37u0/Ot6bmUaYjUaYjUaYjUaYjUaYjUaYjUaYjUYYxYdHb14dvni3HDw7vXzw5OVj/fkoGmENMfT1+4vl+uZ20bj6+WfBIf2dtTRCL4m0Z7jG+efvQ50wQg8plxrjBSOdMEIPKY9WjConIwifv/20/P77b3MY0aW29RqIIT3Aab2X7Pf18tdmDed+/PZjIcN6ndAIkBR78A7Nra2Bnk5PTz7oJRvgSM4JI9CMeoMUOhMSrR5wluyDM/rzFF7wXAeiiFJW6fqe+hekfZCLfgqdMdcBaq4E0tmyvoS0LOi5CF4ZGQeOz77o7+1Ap7LmYA86EDXDQNvqOhDVIqluWZ+D7iUoU89D7u4wAsxFwzsURlnTIPpePVMinhMMCr1WaAQhB2AYnmN4OjE8tvRCtBdlybkwuvCMsIZRJugfrxHX0AiQ6HMQkUrppV2TNUSQjGAw6a+JpNA7t+S0OTy6mKjRqAR6SJmWQN8QGP29nX+8BtJgo9potrC2h7QT2z+i+gU4mJYRm5ExeUrLo0+XGyXA+E2zy16UVutlBlwHoidBOvpy464X6XiuCWRaAVsHIoOk7jFefzYClJDYEvVheplWOZBeJC2/vFoh9R29iF0HSiUkKatJ7xqk76Mae3YcKDVQTZZGQaKbG6v6Ob/9A5I6opxS0tr7aGuFPNroNc8WfZnuOFDifTWvRunh5tEIOUaNNQr/HShRH3YfyP3myNEIJUY/+Eeg9PL0aISITANGGTN7JCmdVuOhEWajEWajEWajEWajEWajEWajEWajEWajEWbjHQ1vbmLhy9BGAAAAAElFTkSuQmCC"
+                   y="17"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="117.3438" x="142.3285" y="80.4688">&#1055;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1090;&#1077;&#1083;&#1080;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="198.7855" y="97.3789">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94.7119"
+                  x="122.37" y="113.8672">&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1090;&#1077;&#1083;&#1080;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="217.0819" y="113.8672">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58.1191"
+                  x="221.5116" y="113.8672">&#1089;&#1080;&#1089;&#1090;&#1077;&#1084;&#1099;
+            </text>
+        </g><!--entity chatgpt-->
+        <g class="entity" data-entity="chatgpt" data-source-line="413" data-uid="ent0014" id="entity_chatgpt">
+            <rect fill="#999999" height="88.3086" style="stroke:#8A8A8A;stroke-width:0.5;" width="141.2109" x="995.39"
+                  y="772.76"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="1063.7806" y="796.2952">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="121.2109" x="1005.39" y="814.717">ForeignSystem
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="1063.7806" y="831.6272">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99.1963"
+                  x="1016.3973" y="848.1155">ForeignSystem
+            </text>
+        </g><!--link user to spa-->
+        <g class="link" data-entity-1="user" data-entity-2="spa" data-source-line="1773" data-uid="lnk15"
+           id="link_user_spa">
+            <path d="M178.64,127.26 C164.52,164.75 148.9711,206.0139 133.8711,246.0839" fill="none" id="user-to-spa"
+                  style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="131.05,253.57,136.6783,247.1418,131.0638,245.026,131.05,253.57"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="29.4375" x="171.7305" y="169.4216">Uses
+            </text>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="37.8984" x="167.5" y="183.5544">[https]
+            </text>
+        </g><!--link user to nginx-->
+        <g class="link" data-entity-1="user" data-entity-2="nginx" data-source-line="1773" data-uid="lnk16"
+           id="link_user_nginx">
+            <path d="M223.59,127.26 C238.83,167.3 256.1047,212.7031 271.8747,254.1431" fill="none" id="user-to-nginx"
+                  style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="274.72,261.62,274.6785,253.0761,269.0708,255.2101,274.72,261.62"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="29.4375" x="249.8005" y="169.4216">Uses
+            </text>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="37.8984" x="245.57" y="183.5544">[https]
+            </text>
+        </g><!--link spa to nginx-->
+        <g class="link" data-entity-1="spa" data-entity-2="nginx" data-source-line="1839" data-uid="lnk17"
+           id="link_spa_nginx">
+            <path d="M176.92,329.04 C201.15,329.04 219.51,329.04 241.6,329.04" fill="none" id="spa-to-nginx"
+                  style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="249.6,329.04,241.6,326.04,241.6,332.04,249.6,329.04"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="29.4375" x="198.9805" y="308.6416">Uses
+            </text>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="37.8984" x="194.75" y="322.7744">[https]
+            </text>
+        </g><!--link nginx to static_nginx-->
+        <g class="link" data-entity-1="nginx" data-entity-2="static_nginx" data-source-line="1773" data-uid="lnk18"
+           id="link_nginx_static_nginx">
+            <path d="M249.6,362.56 C224.49,380.98 195.42,405.97 176,434.26 C160.38,457.01 151.628,477.5401 144.008,502.8301"
+                  fill="none" id="nginx-to-static_nginx" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="141.7,510.49,146.8804,503.6956,141.1355,501.9647,141.7,510.49"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="35.1563" x="177" y="446.8616">proxy
+            </text>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="3.9551" x="212.1563" y="446.8616">&#160;
+            </text>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="12.5273" x="216.1113" y="446.8616">to
+            </text>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="3.9551" x="228.6387" y="446.8616">&#160;
+            </text>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="33.8555" x="232.5938" y="446.8616">static
+            </text>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="3.9551" x="266.4492" y="446.8616">&#160;
+            </text>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="34.6699" x="270.4043" y="446.8616">nginx
+            </text>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="41.2676" x="220.4033" y="460.9944">[proxy]
+            </text>
+        </g><!--link nginx to app-->
+        <g class="link" data-entity-1="nginx" data-entity-2="app" data-source-line="1773" data-uid="lnk19"
+           id="link_nginx_app">
+            <path d="M307.6,396.34 C310.71,418.13 314.81,442.37 320,464.26 C322.3,473.96 322.7768,476.3527 325.7368,486.2927"
+                  fill="none" id="nginx-to-app" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="328.02,493.96,328.612,485.4365,322.8616,487.1489,328.02,493.96"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="18.6035" x="325.4678" y="446.8616">sgi
+            </text>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="3.9551" x="344.0713" y="446.8616">&#160;
+            </text>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="28.0313" x="348.0264" y="446.8616">calls
+            </text>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="59.5254" x="321" y="460.9944">[gunicorn]
+            </text>
+        </g><!--link static_nginx to filesystem-->
+        <g class="link" data-entity-1="static_nginx" data-entity-2="filesystem" data-source-line="1773" data-uid="lnk20"
+           id="link_static_nginx_filesystem">
+            <path d="M134,645.05 C138.76,666.44 146.72,689.23 160,707.19 C190.04,747.8 232.8989,773.1599 272.3289,790.8199"
+                  fill="none" id="static_nginx-to-filesystem" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="279.63,794.09,273.5551,788.082,271.1026,793.5579,279.63,794.09"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="37.1016" x="161" y="703.7916">Reads
+            </text>
+        </g><!--link app to db-->
+        <g class="link" data-entity-1="app" data-entity-2="db" data-source-line="1773" data-uid="lnk21"
+           id="link_app_db">
+            <path d="M339.73,661.41 C340.34,677.81 344.24,694.01 354,707.19 C370.03,728.84 508.4584,766.4717 608.4484,791.4417"
+                  fill="none" id="app-to-db" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="616.21,793.38,609.1752,788.5311,607.7215,794.3523,616.21,793.38"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="82.7695" x="355" y="703.7916">Reads/Writes
+            </text>
+        </g><!--link app to filesystem-->
+        <g class="link" data-entity-1="app" data-entity-2="filesystem" data-source-line="1773" data-uid="lnk22"
+           id="link_app_filesystem">
+            <path d="M266.26,648.01 C236.82,670.61 211.47,690.23 211,691.19 C190.61,732.64 230.2678,764.4705 272.6878,786.9005"
+                  fill="none" id="app-to-filesystem" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="279.76,790.64,274.0901,784.2484,271.2855,789.5526,279.76,790.64"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="82.7695" x="212" y="703.7916">Reads/Writes
+            </text>
+        </g><!--reverse link rabbitmq to app-->
+        <g class="link" data-entity-1="rabbitmq" data-entity-2="app" data-source-line="1811" data-uid="lnk24"
+           id="link_rabbitmq_app">
+            <path d="M612.7044,354.25 C571.6044,372.59 520.93,398.6 477,434.26 C455.78,451.48 435.5,472.86 417.84,493.77"
+                  fill="none" id="rabbitmq-backto-app" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="620.01,350.99,611.4819,351.5104,613.9268,356.9896,620.01,350.99"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="82.7695" x="478" y="453.8616">Reads/Writes
+            </text>
+        </g><!--link rabbitmq to celery_worker-->
+        <g class="link" data-entity-1="rabbitmq" data-entity-2="celery_worker" data-source-line="1773" data-uid="lnk25"
+           id="link_rabbitmq_celery_worker">
+            <path d="M666.23,384.23 C665.91,409.34 668.28,439.12 678,464.26 C684.28,480.49 689.0529,489.7478 699.6929,503.9478"
+                  fill="none" id="rabbitmq-to-celery_worker" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="704.49,510.35,702.0937,502.1489,697.2921,505.7468,704.49,510.35"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="82.7695" x="679" y="453.8616">Reads/Writes
+            </text>
+        </g><!--reverse link rabbitmq to celery_worker-->
+        <g class="link" data-entity-1="rabbitmq" data-entity-2="celery_worker" data-source-line="1811" data-uid="lnk28"
+           id="link_rabbitmq_celery_worker">
+            <path d="M727.5236,377.5701 C744.8236,394.8901 756.52,410.76 766,434.26 C775.58,458.01 778.07,485.84 777.64,510.57"
+                  fill="none" id="rabbitmq-backto-celery_worker" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="721.87,371.91,725.401,379.6902,729.6461,375.45,721.87,371.91"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="82.7695" x="775.3" y="453.8616">Reads/Writes
+            </text>
+        </g><!--link celery_worker to db-->
+        <g class="link" data-entity-1="celery_worker" data-entity-2="db" data-source-line="1773" data-uid="lnk26"
+           id="link_celery_worker_db">
+            <path d="M796.02,645.01 C800.5,665.28 801.81,687.42 795,707.19 C791.49,717.38 790.6875,720.485 784.9975,729.995"
+                  fill="none" id="celery_worker-to-db" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="780.89,736.86,787.5719,731.5353,782.4231,728.4547,780.89,736.86"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="82.7695" x="799.39" y="703.7916">Reads/Writes
+            </text>
+        </g><!--link celery_worker to filesystem-->
+        <g class="link" data-entity-1="celery_worker" data-entity-2="filesystem" data-source-line="1773"
+           data-uid="lnk29" id="link_celery_worker_filesystem">
+            <path d="M730.62,644.94 C714.54,667.33 694.23,690.78 671,707.19 C648.12,723.35 493.3536,770.3082 404.0936,796.6182"
+                  fill="none" id="celery_worker-to-filesystem" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="396.42,798.88,404.9418,799.4958,403.2454,793.7406,396.42,798.88"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="82.7695" x="689.08" y="703.7916">Reads/Writes
+            </text>
+        </g><!--link celery_worker to chatgpt-->
+        <g class="link" data-entity-1="celery_worker" data-entity-2="chatgpt" data-source-line="1773" data-uid="lnk30"
+           id="link_celery_worker_chatgpt">
+            <path d="M854.4,641.56 C901.85,677.11 956.04,718.16 979,737.19 C992.49,748.37 1000.7989,755.5514 1013.7689,767.2914"
+                  fill="none" id="celery_worker-to-chatgpt" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="1019.7,772.66,1015.7821,765.0672,1011.7557,769.5155,1019.7,772.66"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="32.3438" x="941.03" y="703.7916">https
+            </text>
+        </g><!--link celery_beat to db-->
+        <g class="link" data-entity-1="celery_beat" data-entity-2="db" data-source-line="1773" data-uid="lnk31"
+           id="link_celery_beat_db">
+            <path d="M566.99,653.26 C569.44,671.71 574.22,690.86 583,707.19 C591.45,722.91 597.4978,731.7085 610.4378,744.5785"
+                  fill="none" id="celery_beat-to-db" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="616.11,750.22,612.5534,742.4514,608.3223,746.7056,616.11,750.22"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="82.7695" x="584" y="703.7916">Reads/Writes
+            </text>
+        </g><!--reverse link rabbitmq to celery_beat-->
+        <g class="link" data-entity-1="rabbitmq" data-entity-2="celery_beat" data-source-line="1811" data-uid="lnk33"
+           id="link_rabbitmq_celery_beat">
+            <path d="M614.5518,379.9026 C598.2518,396.9526 587.51,411.95 578,434.26 C569.05,455.25 565.12,479.56 563.74,502.08"
+                  fill="none" id="rabbitmq-backto-celery_beat" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="620.08,374.12,612.3833,377.8295,616.7202,381.9757,620.08,374.12"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="82.7695" x="579" y="453.8616">Reads/Writes
+            </text>
+        </g><!--link celery_beat to filesystem-->
+        <g class="link" data-entity-1="celery_beat" data-entity-2="filesystem" data-source-line="1773" data-uid="lnk34"
+           id="link_celery_beat_filesystem">
+            <path d="M495.17,653.12 C456.87,692.79 416.6977,734.4057 384.4577,767.7857" fill="none"
+                  id="celery_beat-to-filesystem" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="378.9,773.54,386.6156,769.8699,382.2999,765.7016,378.9,773.54"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="82.7695" x="453.5" y="703.7916">Reads/Writes
+            </text>
+        </g><!--link celery_flower to db-->
+        <g class="link" data-entity-1="celery_flower" data-entity-2="db" data-source-line="1773" data-uid="lnk35"
+           id="link_celery_flower_db">
+            <path d="M896,380.65 C918.39,456.94 948.51,603.5 890,707.19 C871.07,740.73 844.3018,761.4458 810.9818,778.4958"
+                  fill="none" id="celery_flower-to-db" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="803.86,782.14,812.3484,781.1664,809.6152,775.8251,803.86,782.14"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="37.1016" x="924.97" y="582.3216">Reads
+            </text>
+        </g><!--link celery_flower to rabbitmq-->
+        <g class="link" data-entity-1="celery_flower" data-entity-2="rabbitmq" data-source-line="1839" data-uid="lnk36"
+           id="link_celery_flower_rabbitmq">
+            <path d="M794.61,329.04 C769.95,329.04 751.77,329.04 729.88,329.04" fill="none"
+                  id="celery_flower-to-rabbitmq" style="stroke:#666666;stroke-width:1;"/>
+            <polygon fill="#666666" points="721.88,329.04,729.88,332.04,729.88,326.04,721.88,329.04"
+                     style="stroke:#666666;stroke-width:1;"/>
+            <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="37.1016" x="739.77" y="322.6416">Reads
+            </text>
+        </g>
+        <g class="legend" data-source-line="61">
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="52.2539" x="979.0043" y="950.1652">Legend
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4297"
+                  x="1031.2582" y="950.1652">&#160;
+            </text>
+            <rect fill="#08427B" height="16.4883" style="stroke:none;stroke-width:1;" width="132.5967" x="979.0043"
+                  y="953.1183"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46.7646"
+                  x="983.4339" y="966.6534">person
+            </text>
+            <rect fill="#1168BD" height="16.4883" style="stroke:none;stroke-width:1;" width="132.5967" x="979.0043"
+                  y="969.6066"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47.6943"
+                  x="983.4339" y="983.1417">system
+            </text>
+            <rect fill="#438DD5" height="16.4883" style="stroke:none;stroke-width:1;" width="132.5967" x="979.0043"
+                  y="986.0948"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63.6904"
+                  x="983.4339" y="999.63">container
+            </text>
+            <rect fill="#686868" height="16.4883" style="stroke:none;stroke-width:1;" width="132.5967" x="979.0043"
+                  y="1002.5831"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106.8115"
+                  x="983.4339" y="1016.1183">external person
+            </text>
+            <rect fill="#999999" height="16.4883" style="stroke:none;stroke-width:1;" width="132.5967" x="979.0043"
+                  y="1019.0714"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107.7412"
+                  x="983.4339" y="1032.6066">external system
+            </text>
+            <rect fill="#B3B3B3" height="16.4883" style="stroke:none;stroke-width:1;" width="132.5967" x="979.0043"
+                  y="1035.5597"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123.7373"
+                  x="983.4339" y="1049.0948">external container
+            </text>
+            <line style="stroke:#FFFFFF;stroke-width:1;" x1="979.0043" x2="1111.6009" y1="936.63" y2="936.63"/>
+            <line style="stroke:#FFFFFF;stroke-width:1;" x1="979.0043" x2="1111.6009" y1="953.1183" y2="953.1183"/>
+            <line style="stroke:#FFFFFF;stroke-width:1;" x1="979.0043" x2="1111.6009" y1="969.6066" y2="969.6066"/>
+            <line style="stroke:#FFFFFF;stroke-width:1;" x1="979.0043" x2="1111.6009" y1="986.0948" y2="986.0948"/>
+            <line style="stroke:#FFFFFF;stroke-width:1;" x1="979.0043" x2="1111.6009" y1="1002.5831" y2="1002.5831"/>
+            <line style="stroke:#FFFFFF;stroke-width:1;" x1="979.0043" x2="1111.6009" y1="1019.0714" y2="1019.0714"/>
+            <line style="stroke:#FFFFFF;stroke-width:1;" x1="979.0043" x2="1111.6009" y1="1035.5597" y2="1035.5597"/>
+            <line style="stroke:#FFFFFF;stroke-width:1;" x1="979.0043" x2="1111.6009" y1="1052.048" y2="1052.048"/>
+            <line style="stroke:#FFFFFF;stroke-width:1;" x1="979.0043" x2="979.0043" y1="936.63" y2="1052.048"/>
+            <line style="stroke:#FFFFFF;stroke-width:1;" x1="1111.6009" x2="1111.6009" y1="936.63" y2="1052.048"/>
+        </g><!--SRC=[dLNBJjj05DtdAuQeYqHgOSEs2mYXHGAQ9Y34ofeuGt1hREEP2AAg4b1GXO94LNLDwHy4A2904tvXvezwvzgE4-T5cqKoupa-vzp7t4nPZcdNAeoOirvjnvx9pHevrn7KSfW_hP-aKbC9Y6Mw3f_n6JL5W1WEg7oWJjKTX_1SBge-uxlsE5IDCv-F0pXLozaV1_1fkMo9dTqmdkMvpNVhQyR6qjfROpd_9h-waCccKWLGSPsCLdj9qlAdxCX7TIRluFTQDjMHl9MFifNMPq_3puWwb2rrYDi_gW7G5zppBS5Ufp66DAYKwbom7MFUhJaLwjSprE82A4kRfRNy2fB_YZbaaw3MRz3u2looeuvWSGkdRLXhL0iHH6FLWNo0imCq1Ii2orjOFCgcjaFaDP4NybB-I6V9fnI1JxVG6UvHxQ8mforWPTCZaw3E8Cu7sPBt1BxQ-g4wKCTmTAyEUuCEUB89AQmMaA_gNwtYH0lv7JYkNW6xZk9QV_VI1RWa7VKyU7MkiAGPWfP3hWjv1IHDUQLjguQshnD789QcVD9PWlmroF1QXY5sv8tExK2GijdhAnHD6kE22iiqneHx2Kxkmk8s2PPJwxTWsrODTKBq6LGQDvCpOJAR-NLZp_K_OWldS3-zWVj4ThxfLWNY4smNb826mTo4pVQC24F1CgCYbfk7tJ-BaGpswetw0ha_XpL2ii_ti6MxUxr1B-B-FtmC5ZkRr5mePofbu5kWWfOfPvgxq9raqRt1SdRKkTO1DRYD9zYFRL20MQ5EjVI8-iPpSOXsDCn0fuZBbVVfnBhl4eRmWSnjMJRZE8tWZNYZtz_Y64K7hj0fs0Nlns3q7chJ09hFtIcMtnSPSvkAggSROD7rcLLrIbsQ2GzW6XQP7GxSO02jSuRIsq9uUbp6vz4rIY8qn2W6ysiS9XexYLlf-Uv-dGWtV4wwbnCFGWSXE9Wql6eHazesAbHh3lp3-4uaqi_Ub-4YevMk6QJ29iB7CnkwLb70U3ZuRX_8M0zWlStG3qAg-3Wv78QX4vWH_a0w0HnjOWZhXC2IyBYz-ghPDtec6WrWpx8PGCUPx4L7OoTs44eNauYaEE3-0W00]-->
+    </g>
+</svg>

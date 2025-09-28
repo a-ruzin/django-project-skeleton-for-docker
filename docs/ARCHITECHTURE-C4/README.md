@@ -31,4 +31,4 @@
   | Celery.Worker       | celery_worker      | async task worker (the django app)            |
   | Celery.Flower       | celery_flower      | web UI for monitoring celery tasks            |
 
- ![containers](c2-advmarker.svg)
+ ![containers](c2-system.svg)

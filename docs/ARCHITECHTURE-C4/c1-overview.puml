@@ -5,22 +5,22 @@
 
 LAYOUT_WITH_LEGEND()
 
-Person(user, "Customer", "Strategists who create strategies", $sprite="users")
+Person(user, "Пользователь", "Пользователь системы", $sprite="users")
 
-System(aist, "AI-Strategist", "The main application")
+System(aist, "SYSTEM", "The main application")
 
-System_Boundary(ords, "AI-Chats") {
-    System_Ext(chatgpt, "ChatGPT", "ChatGPT")
-    System_Ext(etc, "etc.", "Другие ОРД")
+System_Boundary(ords, "Foreign systems") {
+    System_Ext(foreign_system, "ForeignSystem", "ForeignSystem")
+    System_Ext(etc, "etc.", "Другие")
 }
 
 System_Boundary(auths, "Auths") {
-    System_Ext(kokocid, "KokocID", "KokocID")
+    System_Ext(google_auth, "GoogleAuth", "GoogleAuth")
 }
 
 Rel(user, aist, "Uses", "https")
 
-Rel(aist, chatgpt, "Uses", "https")
-Rel_R(aist, kokocid, "Uses", "https")
+Rel(aist, foreign_system, "Uses", "https")
+Rel_R(aist, google_auth, "Uses", "https")
 
 @enduml

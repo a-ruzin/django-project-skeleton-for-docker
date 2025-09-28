@@ -10,9 +10,9 @@
 
 LAYOUT_WITH_LEGEND()
 
-Person(user, "Пользователи", "Стратеги подготавливающие маркетинговый план для клиентов", $sprite="users")
+Person(user, "Пользователи", "пользователи системы", $sprite="users")
 
-System_Boundary(aist, "AI-Strategist", "Система подачи отчетности по маркеровке рекламы в ОРД") {
+System_Boundary(aist, "SYSTEM", "Система подачи отчетности по маркеровке рекламы в ОРД") {
     Container(spa, "SPA", "react", "Пользовательский интерфейс", $sprite="react")
     Container(nginx, "Nginx", "nginx", "Веб-сервер", $sprite="nginx")
     Container(app, "API", "django", "Обрабатывает запросы пользовательского интерфейса", $sprite="django")
@@ -20,12 +20,12 @@ System_Boundary(aist, "AI-Strategist", "Система подачи отчетн
     Container(celery_worker, "Celery.Worker", "django", "Асинхронные задачи", $sprite="django")
     Container(celery_beat, "Celery.Beat", "django", "Асинхронные задачи (регулярные)", $sprite="django")
     Container(celery_flower, "Celery.Flower", "django", "Асинхронные задачи (интерфейс)")
-    ContainerDb(db, "Database", "Postgresql", "Holds product, order and invoice information", $sprite="postgresql")
+    ContainerDb(db, "Database", "Postgresql", "Постоянное хранилище данных", $sprite="postgresql")
     ContainerDb(rabbitmq, "RabbitMQ", "RabbitMQ", "", $sprite="rabbitmq")
     Container(filesystem, "filesystem", "fs", "общие файлы")
 }
 
-System_Ext(chatgpt, "ChatGPT", "ChatGPT", "ChatGPT")
+System_Ext(chatgpt, "ForeignSystem", "ForeignSystem", "ForeignSystem")
 
 Rel(user, spa, "Uses", "https")
 Rel(user, nginx, "Uses", "https")
