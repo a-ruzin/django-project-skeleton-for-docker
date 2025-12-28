@@ -12,7 +12,7 @@ LAYOUT_WITH_LEGEND()
 
 Person(user, "Пользователи", "пользователи системы", $sprite="users")
 
-System_Boundary(aist, "SYSTEM", "Система подачи отчетности по маркеровке рекламы в ОРД") {
+System_Boundary(new_project, "NEW_PROJECT", "The main application") {
     Container(spa, "SPA", "react", "Пользовательский интерфейс", $sprite="react")
     Container(nginx, "Nginx", "nginx", "Веб-сервер", $sprite="nginx")
     Container(app, "API", "django", "Обрабатывает запросы пользовательского интерфейса", $sprite="django")

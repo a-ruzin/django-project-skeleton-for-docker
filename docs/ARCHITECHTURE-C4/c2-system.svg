@@ -3,12 +3,13 @@
      style="width:1142px;height:1079px;background:#FFFFFF;" version="1.1" viewBox="0 0 1142 1079" width="1142px"
      zoomAndPan="magnify">
     <defs/>
-    <g><!--cluster aist-->
-        <g class="cluster" data-entity="aist" data-source-line="1660" data-uid="ent0003" id="cluster_aist">
+    <g><!--cluster new_project-->
+        <g class="cluster" data-entity="new_project" data-source-line="1660" data-uid="ent0003"
+           id="cluster_new_project">
             <rect fill="none" height="709.81" style="stroke:#444444;stroke-width:1;stroke-dasharray:7,7;" width="972"
                   x="7" y="202.82"/>
             <text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
-                  textLength="64.4375" x="460.7813" y="220.2888">SYSTEM
+                  textLength="117.1328" x="434.4336" y="220.2888">NEW_PROJECT
             </text>
             <text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
                   textLength="52.9922" x="466.5039" y="235.2653">[system]
@@ -343,52 +344,52 @@
         </g><!--link nginx to static_nginx-->
         <g class="link" data-entity-1="nginx" data-entity-2="static_nginx" data-source-line="1773" data-uid="lnk18"
            id="link_nginx_static_nginx">
-            <path d="M249.6,362.56 C224.49,380.98 195.42,405.97 176,434.26 C160.38,457.01 151.628,477.5401 144.008,502.8301"
+            <path d="M249.65,365.04 C226.21,383.42 199.48,407.64 181,434.26 C165.16,457.07 155.8058,477.566 147.2458,502.736"
                   fill="none" id="nginx-to-static_nginx" style="stroke:#666666;stroke-width:1;"/>
-            <polygon fill="#666666" points="141.7,510.49,146.8804,503.6956,141.1355,501.9647,141.7,510.49"
+            <polygon fill="#666666" points="144.67,510.31,150.0861,503.702,144.4056,501.7701,144.67,510.31"
                      style="stroke:#666666;stroke-width:1;"/>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
-                  textLength="35.1563" x="177" y="446.8616">proxy
+                  textLength="35.1563" x="182" y="446.8616">proxy
             </text>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
-                  textLength="3.9551" x="212.1563" y="446.8616">&#160;
+                  textLength="3.9551" x="217.1563" y="446.8616">&#160;
             </text>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
-                  textLength="12.5273" x="216.1113" y="446.8616">to
+                  textLength="12.5273" x="221.1113" y="446.8616">to
             </text>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
-                  textLength="3.9551" x="228.6387" y="446.8616">&#160;
+                  textLength="3.9551" x="233.6387" y="446.8616">&#160;
             </text>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
-                  textLength="33.8555" x="232.5938" y="446.8616">static
+                  textLength="33.8555" x="237.5938" y="446.8616">static
             </text>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
-                  textLength="3.9551" x="266.4492" y="446.8616">&#160;
+                  textLength="3.9551" x="271.4492" y="446.8616">&#160;
             </text>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
-                  textLength="34.6699" x="270.4043" y="446.8616">nginx
+                  textLength="34.6699" x="275.4043" y="446.8616">nginx
             </text>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
-                  textLength="41.2676" x="220.4033" y="460.9944">[proxy]
+                  textLength="41.2676" x="225.4033" y="460.9944">[proxy]
             </text>
         </g><!--link nginx to app-->
         <g class="link" data-entity-1="nginx" data-entity-2="app" data-source-line="1773" data-uid="lnk19"
            id="link_nginx_app">
-            <path d="M307.6,396.34 C310.71,418.13 314.81,442.37 320,464.26 C322.3,473.96 322.7768,476.3527 325.7368,486.2927"
+            <path d="M311.06,396.17 C315.03,417.95 319.82,442.22 325,464.26 C327.27,473.94 327.7791,476.3127 330.4591,486.3127"
                   fill="none" id="nginx-to-app" style="stroke:#666666;stroke-width:1;"/>
-            <polygon fill="#666666" points="328.02,493.96,328.612,485.4365,322.8616,487.1489,328.02,493.96"
+            <polygon fill="#666666" points="332.53,494.04,333.3568,485.5361,327.5613,487.0893,332.53,494.04"
                      style="stroke:#666666;stroke-width:1;"/>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
-                  textLength="18.6035" x="325.4678" y="446.8616">sgi
+                  textLength="18.6035" x="330.4678" y="446.8616">sgi
             </text>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
-                  textLength="3.9551" x="344.0713" y="446.8616">&#160;
+                  textLength="3.9551" x="349.0713" y="446.8616">&#160;
             </text>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
-                  textLength="28.0313" x="348.0264" y="446.8616">calls
+                  textLength="28.0313" x="353.0264" y="446.8616">calls
             </text>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
-                  textLength="59.5254" x="321" y="460.9944">[gunicorn]
+                  textLength="59.5254" x="326" y="460.9944">[gunicorn]
             </text>
         </g><!--link static_nginx to filesystem-->
         <g class="link" data-entity-1="static_nginx" data-entity-2="filesystem" data-source-line="1773" data-uid="lnk20"
@@ -423,32 +424,32 @@
         </g><!--reverse link rabbitmq to app-->
         <g class="link" data-entity-1="rabbitmq" data-entity-2="app" data-source-line="1811" data-uid="lnk24"
            id="link_rabbitmq_app">
-            <path d="M612.7044,354.25 C571.6044,372.59 520.93,398.6 477,434.26 C455.78,451.48 435.5,472.86 417.84,493.77"
+            <path d="M612.9977,355.7597 C573.4277,374.4697 525.49,400.15 483,434.26 C461.24,451.73 440.12,473.18 421.58,494.09"
                   fill="none" id="rabbitmq-backto-app" style="stroke:#666666;stroke-width:1;"/>
-            <polygon fill="#666666" points="620.01,350.99,611.4819,351.5104,613.9268,356.9896,620.01,350.99"
+            <polygon fill="#666666" points="620.23,352.34,611.7153,353.0476,614.2801,358.4718,620.23,352.34"
                      style="stroke:#666666;stroke-width:1;"/>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
-                  textLength="82.7695" x="478" y="453.8616">Reads/Writes
+                  textLength="82.7695" x="484" y="453.8616">Reads/Writes
             </text>
         </g><!--link rabbitmq to celery_worker-->
         <g class="link" data-entity-1="rabbitmq" data-entity-2="celery_worker" data-source-line="1773" data-uid="lnk25"
            id="link_rabbitmq_celery_worker">
-            <path d="M666.23,384.23 C665.91,409.34 668.28,439.12 678,464.26 C684.28,480.49 689.0529,489.7478 699.6929,503.9478"
+            <path d="M670.07,384.53 C671.29,409.56 675.12,439.19 685,464.26 C691.33,480.31 696.0097,489.512 706.1497,503.892"
                   fill="none" id="rabbitmq-to-celery_worker" style="stroke:#666666;stroke-width:1;"/>
-            <polygon fill="#666666" points="704.49,510.35,702.0937,502.1489,697.2921,505.7468,704.49,510.35"
+            <polygon fill="#666666" points="710.76,510.43,708.6015,502.1631,703.698,505.6208,710.76,510.43"
                      style="stroke:#666666;stroke-width:1;"/>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
-                  textLength="82.7695" x="679" y="453.8616">Reads/Writes
+                  textLength="82.7695" x="686" y="453.8616">Reads/Writes
             </text>
         </g><!--reverse link rabbitmq to celery_worker-->
         <g class="link" data-entity-1="rabbitmq" data-entity-2="celery_worker" data-source-line="1811" data-uid="lnk28"
            id="link_rabbitmq_celery_worker">
-            <path d="M727.5236,377.5701 C744.8236,394.8901 756.52,410.76 766,434.26 C775.58,458.01 778.07,485.84 777.64,510.57"
+            <path d="M727.8513,372.7538 C747.7713,390.5138 762.39,408.24 773,434.26 C782.67,457.97 784.03,485.79 782.22,510.53"
                   fill="none" id="rabbitmq-backto-celery_worker" style="stroke:#666666;stroke-width:1;"/>
-            <polygon fill="#666666" points="721.87,371.91,725.401,379.6902,729.6461,375.45,721.87,371.91"
+            <polygon fill="#666666" points="721.88,367.43,725.8549,374.9931,729.8478,370.5146,721.88,367.43"
                      style="stroke:#666666;stroke-width:1;"/>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
-                  textLength="82.7695" x="775.3" y="453.8616">Reads/Writes
+                  textLength="82.7695" x="781.9" y="453.8616">Reads/Writes
             </text>
         </g><!--link celery_worker to db-->
         <g class="link" data-entity-1="celery_worker" data-entity-2="db" data-source-line="1773" data-uid="lnk26"
@@ -493,12 +494,12 @@
         </g><!--reverse link rabbitmq to celery_beat-->
         <g class="link" data-entity-1="rabbitmq" data-entity-2="celery_beat" data-source-line="1811" data-uid="lnk33"
            id="link_rabbitmq_celery_beat">
-            <path d="M614.5518,379.9026 C598.2518,396.9526 587.51,411.95 578,434.26 C569.05,455.25 565.12,479.56 563.74,502.08"
+            <path d="M615.0405,386.0739 C601.4705,402.1539 593.42,414.77 585,434.26 C575.9,455.31 571.02,479.63 568.5,502.16"
                   fill="none" id="rabbitmq-backto-celery_beat" style="stroke:#666666;stroke-width:1;"/>
-            <polygon fill="#666666" points="620.08,374.12,612.3833,377.8295,616.7202,381.9757,620.08,374.12"
+            <polygon fill="#666666" points="620.2,379.96,612.7478,384.139,617.3332,388.0087,620.2,379.96"
                      style="stroke:#666666;stroke-width:1;"/>
             <text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
-                  textLength="82.7695" x="579" y="453.8616">Reads/Writes
+                  textLength="82.7695" x="586" y="453.8616">Reads/Writes
             </text>
         </g><!--link celery_beat to filesystem-->
         <g class="link" data-entity-1="celery_beat" data-entity-2="filesystem" data-source-line="1773" data-uid="lnk34"
@@ -578,6 +579,6 @@
             <line style="stroke:#FFFFFF;stroke-width:1;" x1="979.0043" x2="1111.6009" y1="1052.048" y2="1052.048"/>
             <line style="stroke:#FFFFFF;stroke-width:1;" x1="979.0043" x2="979.0043" y1="936.63" y2="1052.048"/>
             <line style="stroke:#FFFFFF;stroke-width:1;" x1="1111.6009" x2="1111.6009" y1="936.63" y2="1052.048"/>
-        </g><!--SRC=[dLNBJjj05DtdAuQeYqHgOSEs2mYXHGAQ9Y34ofeuGt1hREEP2AAg4b1GXO94LNLDwHy4A2904tvXvezwvzgE4-T5cqKoupa-vzp7t4nPZcdNAeoOirvjnvx9pHevrn7KSfW_hP-aKbC9Y6Mw3f_n6JL5W1WEg7oWJjKTX_1SBge-uxlsE5IDCv-F0pXLozaV1_1fkMo9dTqmdkMvpNVhQyR6qjfROpd_9h-waCccKWLGSPsCLdj9qlAdxCX7TIRluFTQDjMHl9MFifNMPq_3puWwb2rrYDi_gW7G5zppBS5Ufp66DAYKwbom7MFUhJaLwjSprE82A4kRfRNy2fB_YZbaaw3MRz3u2looeuvWSGkdRLXhL0iHH6FLWNo0imCq1Ii2orjOFCgcjaFaDP4NybB-I6V9fnI1JxVG6UvHxQ8mforWPTCZaw3E8Cu7sPBt1BxQ-g4wKCTmTAyEUuCEUB89AQmMaA_gNwtYH0lv7JYkNW6xZk9QV_VI1RWa7VKyU7MkiAGPWfP3hWjv1IHDUQLjguQshnD789QcVD9PWlmroF1QXY5sv8tExK2GijdhAnHD6kE22iiqneHx2Kxkmk8s2PPJwxTWsrODTKBq6LGQDvCpOJAR-NLZp_K_OWldS3-zWVj4ThxfLWNY4smNb826mTo4pVQC24F1CgCYbfk7tJ-BaGpswetw0ha_XpL2ii_ti6MxUxr1B-B-FtmC5ZkRr5mePofbu5kWWfOfPvgxq9raqRt1SdRKkTO1DRYD9zYFRL20MQ5EjVI8-iPpSOXsDCn0fuZBbVVfnBhl4eRmWSnjMJRZE8tWZNYZtz_Y64K7hj0fs0Nlns3q7chJ09hFtIcMtnSPSvkAggSROD7rcLLrIbsQ2GzW6XQP7GxSO02jSuRIsq9uUbp6vz4rIY8qn2W6ysiS9XexYLlf-Uv-dGWtV4wwbnCFGWSXE9Wql6eHazesAbHh3lp3-4uaqi_Ub-4YevMk6QJ29iB7CnkwLb70U3ZuRX_8M0zWlStG3qAg-3Wv78QX4vWH_a0w0HnjOWZhXC2IyBYz-ghPDtec6WrWpx8PGCUPx4L7OoTs44eNauYaEE3-0W00]-->
+        </g><!--SRC=[dLNHJjim57tlLvXe3wcqmGklUu1IDYO6NIcgzXIvgIbXgHCILr1DamO3JQX8JFk0RPzGnYhA6EKNx3_QjPCqhKbRjZwqSUxnEUVUQz_EETHsMtM2x4M_rNGN2ejMmQCCEvG4y_9DBZUdGHpRe-52GB3D8aGseBw7QSERXl2za3K24kwxqr2ja0JXD01jEFHm6Y30jPh3cljnFkjBRpUtArPrhVBIMY- -A6wicFbShWGg7ZMbsbDayEzym6_5ER-6tv-yAuvvZz_olY5Zzzan98vuNnofvH_H0UYJq0ySHfuRAWS3LBRQ8IDDQzbhqJeEsYOb1vOVU7l4Pi2yKQnQfVBcgsAX8eKgkmGreHC8-xxhs9Wv7ZNow7qEmMVO9JFqCO2tIajoZsgBCJ43SGucV_C-lq7mTITVYe_Y148tucZKSSIJrwHKgQLH-IjLQFB0lmB7vJDW1qBGW-zHkWYdqq5Ui7Mfj2OPelEYkBxnIo3fyajfMtIaVI0yHf1Bbzz3Q01bxg3iHiGf3lWL7sGaoRkZlc9HtLZ8eDYsDINT7-3acly2qS-yYrJNfNuVbdUY8qwHZF6xQ36x4ZPnIT2s3hpWdJf_1RMUhwgrLfqlyfm1yQaiH2J1Ur5j8Z_zHsGO2zO8PgdSCgp-MGoP4EhnA_49Qdy1pmgIVxo77TSx64rwLQt_myV3PkTrpPMQMQy1tmfck8P38hbBmp6Kt1lLpe6ua3gWraDALhQpBo-wE9FI4_gR3hKCxMGIWKvPFRv-OsZFOvSmXZ-et8xZab2D4jYHBkJ-dL1bCO0hT0PsmVi96Bs1tdI0viDm11KFcMdlOjRmvG5OzGBYDEZMa6R62nXbPUB6qp8QGDiXKTAxZFborgNnv1hf20cnoj7yceP9nevsAs5k7hOHy-BtQ7WvLI1s48EZIHCs76HZrrKAZHQ5luU09YBZx6CLBXDS7vfHLEeGgTSBLTch964LVBXt36HjHx3Hmp0EKbHfM1yEMMWDCy4VI6l0oIOoM6SafiFJupNMpR7HCzDe17kKpGWwpUGeEXaxgODOkgmZT770_GK0]-->
     </g>
 </svg>

@@ -1,4 +1,4 @@
-FROM python:3.13-slim-bookworm
+FROM python:3.14.2-slim-trixie
 
 WORKDIR /app
 ENV PYTHONUNBUFFERED=1
