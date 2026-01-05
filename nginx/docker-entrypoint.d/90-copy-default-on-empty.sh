@@ -11,7 +11,7 @@ copy_defaults() {
   local template relative_path output_path subdir
   [ -d "$template_dir" ] || return 0
   if [ ! -w "$output_dir" ]; then
-    echo >&3 "$ME: ERROR: $template_dir exists, but $output_dir is not writable"
+    echo >&2 "$ME: ERROR: $template_dir exists, but $output_dir is not writable"
     return 0
   fi
   find "$template_dir" -follow -type f -name "*.conf" -print | while read -r template; do
@@ -21,7 +21,7 @@ copy_defaults() {
     # create a subdirectory where the template file exists
     mkdir -p "$output_dir/$subdir"
     if [ ! -f "$output_path" -o "$template" -nt "$output_path" ]; then
-      echo >&3 "$ME: Copying default $template to $output_path"
+      echo >&2 "$ME: Copying default $template to $output_path"
       envsubst '$PROJECT_DOMAIN $PROJECT_PORT' < "$template" > "$output_path"
     fi
   done
