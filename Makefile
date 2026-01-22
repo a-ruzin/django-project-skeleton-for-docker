@@ -2,7 +2,7 @@
 ifneq ("$(wildcard .env)","")
 export $(shell sed 's/=.*//' .env)  # Export all variables to subprocesses
 endif
-.PHONY: all test testv dcrb clean_db dump_db restore_db up down build migrate migrations static shell check_db_container_is_running nginx
+.PHONY: all test testv dcrb clean_db dump_db restore_db up down build migrate migrations static shell check_db_container_is_running nginx ssl-init ssl-renew
 
 MAIN_BRANCH=main
 DEFAULT_DB_DUMP_FILE=deploy/data/backup/db/dump.sql.gz
@@ -224,3 +224,16 @@ testv:
 
 nginx:
 	@docker compose exec nginx sh
+
+ssl-init:
+	@echo "Installing SSL for domain: ${WHITE}$(PROJECT_DOMAIN)${NC}"
+	@echo "Do you want to continue? Type 'yes' to proceed or anything else to abort."
+	@read user_input; \
+	if [ "$$user_input" != "yes" ]; then \
+		echo "Aborting"; \
+	else \
+		docker compose exec nginx certbot --nginx -d $(PROJECT_DOMAIN); \
+	fi
+
+ssl-renew:
+	@docker compose exec -T nginx certbot renew --deploy-hook "nginx -t && nginx -s reload"

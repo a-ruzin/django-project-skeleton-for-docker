@@ -132,7 +132,7 @@
 
 8. Setting up SSL
 
-       docker compose exec nginx certbot --nginx -d project.ru
+       make ssl-init
 
 9. Create a user
 
