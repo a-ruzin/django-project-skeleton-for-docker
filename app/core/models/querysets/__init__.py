@@ -1,1 +1,3 @@
 from .user_queryset import UserQuerySet
+from .user_registration_request_queryset import UserRegistrationRequestQuerySet
+from .workspace_queryset import WorkspaceQuerySet

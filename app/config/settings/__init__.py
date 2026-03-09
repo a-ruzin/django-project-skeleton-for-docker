@@ -4,6 +4,7 @@ from datetime import timedelta
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
+from lib.sms import SmsServiceConfig
 from .auth import AUTH_PASSWORD_VALIDATORS
 from .base_dirs import BASE_DIR, BIN_DIR, LOCKS_DIR, LOGS_DIR
 from .database import DATABASES
@@ -19,6 +20,9 @@ PROJECT_DOMAIN = env("PROJECT_DOMAIN") or "localhost"
 PROJECT_PORT = env("PROJECT_PORT") or 80
 PROJECT_PORT_SSL = env("PROJECT_PORT_SSL") or 443
 FRONTEND_PROJECT_DOMAIN = env("FRONTEND_PROJECT_DOMAIN") or ""
+PROJECT_IP = env("PROJECT_IP") or ""
+
+DEBUG_PHONE_CONFIRMATION_CODE = env("DEBUG_PHONE_CONFIRMATION_CODE") or ""
 
 ROOT_URLCONF = "config.urls"
 WSGI_APPLICATION = "config.wsgi.application"
@@ -85,6 +89,10 @@ if FRONTEND_PROJECT_DOMAIN and FRONTEND_PROJECT_DOMAIN != PROJECT_DOMAIN:
         get_full_project_url(PROJECT_PROTOCOL, FRONTEND_PROJECT_DOMAIN, PROJECT_PORT, PROJECT_PORT_SSL)
     )
 
+CSRF_COOKIE_HTTPONLY = False
+CSRF_COOKIE_SAMESITE = 'Lax'
+CSRF_COOKIE_SECURE = not DEBUG
+SESSION_COOKIE_SECURE = not DEBUG
 CSRF_TRUSTED_ORIGINS += ['http://localhost:3000']
 CORS_ALLOWED_ORIGINS = CSRF_TRUSTED_ORIGINS
 
@@ -109,6 +117,7 @@ INSTALLED_APPS = [
     "rangefilter",
     "rest_framework",  # DRF
     "rest_framework_simplejwt",  # DRF
+    "rest_framework_simplejwt.token_blacklist",
     "django_filters",  # DRF
     "drf_yasg",  # DRF
     'django_celery_results',
@@ -152,7 +161,8 @@ REST_FRAMEWORK = {
         "rest_framework.renderers.BrowsableAPIRenderer",  # WEB интерфейс для API
     ],
     "DEFAULT_AUTHENTICATION_CLASSES": [
-        "rest_framework_simplejwt.authentication.JWTAuthentication",  # Аутентификация по JWT-токену
+        "core.api.authentication.CookieJWTAuthentication",  # JWT из cookie + заголовка
+        # "rest_framework_simplejwt.authentication.JWTAuthentication",  # Аутентификация по JWT-токену
         # "rest_framework.authentication.SessionAuthentication",  # Стандартная (session) django аутентификация
         # "rest_framework.authentication.BasicAuthentication",  # Basic аутентификация
     ],
@@ -166,8 +176,16 @@ if DEBUG:
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),  # Set access token lifetime
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),  # Set refresh token lifetime
-    'ROTATE_REFRESH_TOKENS': False,  # Optional: Control refresh token rotation
+    'ROTATE_REFRESH_TOKENS': True,  # Optional: Control refresh token rotation
     'BLACKLIST_AFTER_ROTATION': True,  # Optional: Blacklist old tokens after refresh
+
+    # Cookie settings (used when manually setting cookies in views)
+    'AUTH_COOKIE': 'access_token',  # Cookie name for access
+    'AUTH_COOKIE_REFRESH': 'refresh_token',  # Cookie name for refresh
+    'AUTH_COOKIE_SECURE': not DEBUG,  # Send only over HTTPS (set to False for local dev)
+    'AUTH_COOKIE_HTTP_ONLY': True,  # Prevent JS access
+    'AUTH_COOKIE_PATH': '/',  # Cookie path
+    'AUTH_COOKIE_SAMESITE': 'Lax',  # CSRF protection (use 'Strict' for higher security)
 }
 
 SWAGGER_SETTINGS = {
@@ -206,3 +224,9 @@ OPENAI_CONFIG = {
 KID_URL = env("KID_URL")
 KID_SECRET = env("KID_SECRET")
 KID_SITE_ID = env("KID_SITE_ID")
+
+
+SMS_SERVICE = SmsServiceConfig(
+    api_key=env("SMS_SERVICE_API_KEY", ""),
+    debug=DEBUG,
+)

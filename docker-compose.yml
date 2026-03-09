@@ -29,6 +29,19 @@ services:
        - nginx-config:/etc/nginx/conf.d
        - nginx-certificates:/etc/letsencrypt
 
+# TODO: раскомментируйте если у вас есть фронтенд или удалите этот комментарий
+#  frontend: # ------------------------------------------------------------------
+#    build:
+#      context: frontend
+#      dockerfile: Dockerfile
+#      target: prod
+#      args:
+#        PROJECT_DOMAIN: ${PROJECT_DOMAIN}
+#    depends_on:
+#      - app
+#    environment:
+#      - PROJECT_DOMAIN=${PROJECT_DOMAIN}
+
   app: # ------------------------------------------------------------------
     build:
       context: app
@@ -51,7 +64,7 @@ services:
        - http-static:/www/static
 
   rabbit:
-    image: rabbitmq:3.12.0-management-alpine
+    image: rabbitmq:4.2.0-management-alpine
     env_file:
       - ./.env
     healthcheck:

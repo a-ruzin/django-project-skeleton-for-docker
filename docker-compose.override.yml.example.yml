@@ -1,11 +1,18 @@
 services:
-  db: # -----------------------------------------------------------------------
-    ports:
-      - "${PROJECT_IP:-0.0.0.0}:5432:5432"
-
   nginx: # --------------------------------------------------------------------
     ports:
       - "${PROJECT_IP:-0.0.0.0}:80:80"
+
+  frontend: # -----------------------------------------------------------------
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+      target: dev              # используем dev-стадию (см. Dockerfile ниже)
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/public:/app/public
+    environment:
+      - WATCHPACK_POLLING=true  # надёжный file-watching в Docker
 
   app: # ------------------------------------------------------------------
     volumes:

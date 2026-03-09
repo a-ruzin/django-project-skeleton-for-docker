@@ -2,7 +2,13 @@
 ifneq ("$(wildcard .env)","")
 export $(shell sed 's/=.*//' .env)  # Export all variables to subprocesses
 endif
-.PHONY: all test testv dcrb clean_db dump_db restore_db up down build migrate migrations static shell check_db_container_is_running nginx ssl-init ssl-renew
+.PHONY: \
+	all build js up down \
+	test testv \
+	clean_db dump_db restore_db dump_media restore_media \
+	migrate migrations static shell check_db_container_is_running nginx \
+	ssl-init ssl-renew \
+ 	bump-version-major bump-version-minor bump-version-patch bump version.json
 
 MAIN_BRANCH=main
 DEFAULT_DB_DUMP_FILE=deploy/data/backup/db/dump.sql.gz
@@ -31,7 +37,7 @@ endif
 
 # COMMANDS
 
-all: build down up migrate collectstatic
+all: build down up migrate static
 
 check_db_container_is_running:
 	@if ! docker compose ps db --status running | grep -q "db"; then \
@@ -168,14 +174,24 @@ restore_media:
 	fi
 
 up:
-	@docker compose up -d
+	@if [ -n "$$DEBUG_PHONE_CONFIRMATION_CODE" ]; then \
+		echo "${RED}WARNING:${NC} DEBUG_PHONE_CONFIRMATION_CODE is set to: ${WHITE}$$DEBUG_PHONE_CONFIRMATION_CODE${NC}"; \
+		echo "This allows bypassing phone confirmation in production!"; \
+		echo "Type 'yes' to continue"; \
+		read user_input; \
+		if [ "$$user_input" != "yes" ]; then \
+			echo "Aborting execution."; \
+			exit 1; \
+		fi; \
+	fi
+	@docker compose up -d --remove-orphans
 
 
 down:
 	@docker compose down
 
 
-build:
+build: version.json
 	@docker compose build
 
 
@@ -183,9 +199,8 @@ migrate:
 	@docker compose exec -T app python manage.py migrate $(ARGS)
 
 
-collectstatic:
+static:
 	@docker compose exec -T app python manage.py collectstatic --no-input
-
 
 migrations:
 	@docker compose exec -T app python manage.py makemigrations $(ARGS)
@@ -217,13 +232,16 @@ restart:
 hard_restart: down up
 
 test:
-	@docker compose exec app pytest $(ARGS)
+	@docker compose exec app pytest --color=yes $(ARGS)
 
 testv:
-	@docker compose exec app pytest -vv $(ARGS)
+	@docker compose exec app pytest -vvs --color=yes $(ARGS)
 
 nginx:
 	@docker compose exec nginx sh
+
+js:
+#	@cd frontend &&	pnpm build
 
 ssl-init:
 	@echo "Installing SSL for domain: ${WHITE}$(PROJECT_DOMAIN)${NC}"
@@ -237,3 +255,17 @@ ssl-init:
 
 ssl-renew:
 	@docker compose exec -T nginx certbot renew --deploy-hook "nginx -t && nginx -s reload"
+
+bump-version-major:
+	./bin/bump_version.sh major
+
+bump-version-minor:
+	./bin/bump_version.sh minor
+
+bump-version-patch:
+	./bin/bump_version.sh patch
+
+bump: bump-version-patch
+
+version.json:
+	@./bin/git_info.sh > app/version.json

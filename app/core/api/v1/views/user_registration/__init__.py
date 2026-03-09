@@ -1,0 +1,3 @@
+from .user_registration_request import UserRegistrationRequestView
+from .user_registration_request_confirm_by_code import ConfirmRegistrationByCodeView
+from .user_registration_request_confirm_by_token import ConfirmRegistrationByTokenView

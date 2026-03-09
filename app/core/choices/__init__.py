@@ -1,1 +1,1 @@
-from .workspace_sysname import WorkspaceSysname
+from .workspace_role import WorkspaceRole

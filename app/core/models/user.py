@@ -11,11 +11,21 @@ from .managers import UserManager
 class User(CoreModel, AbstractBaseUser, PermissionsMixin):
     USERNAME_FIELD = "email"
 
-    first_name: str = models.CharField(_("Имя"), max_length=256, blank=True)
-    last_name: str = models.CharField(_("Фамилия"), max_length=256, blank=True)
-    phone: str = models.CharField(_("Телефон"), max_length=30, blank=True)
-    email: str = models.EmailField(_("Email"), blank=False, unique=True)
-    language: str = models.CharField(_("Язык"), max_length=10, choices=settings.LANGUAGES, default=settings.LANGUAGE_RU)
+    first_name = models.CharField(_("Имя"), max_length=256, blank=True)
+    last_name = models.CharField(_("Фамилия"), max_length=256, blank=True)
+    phone = models.CharField(_("Телефон"), max_length=30, unique=True)
+    is_phone_confirmed = models.BooleanField(
+        _("Телефон подтвержден"),
+        default=False,
+        help_text=_("Означает, что телефон пользователя был подтвержден."),
+    )
+    email = models.EmailField(_("Email"), unique=True, null=True, blank=False)
+    is_email_confirmed = models.BooleanField(
+        _("Email подтвержден"),
+        default=False,
+        help_text=_("Означает, что email пользователя был подтвержден."),
+    )
+    ip_address = models.GenericIPAddressField(null=True, blank=True)
 
     is_staff = models.BooleanField(
         _("Штатный сотрудник"),
@@ -31,22 +41,15 @@ class User(CoreModel, AbstractBaseUser, PermissionsMixin):
         ),
     )
 
-    # https://id.kokocgroup.ru - fields:
-    workspace = models.ForeignKey(
-        'core.Workspace', on_delete=models.PROTECT, related_name='users', blank=True, null=True
-    )
-    kid_id: str = models.CharField(_("KID ID"), max_length=64, blank=True, null=True, unique=True)
-    # end of https://id.kokocgroup.ru - fields
-
-    objects = UserManager()
+    objects = UserManager['User']()
 
     class Meta:
         verbose_name = _("пользователь")
         verbose_name_plural = _("пользователи")
 
     @property
-    def full_name(self):
-        return f'{self.first_name} {self.last_name or ""}'
+    def full_name(self) -> str:
+        return ' '.join(filter(None, [self.first_name, self.last_name]))
 
     def __str__(self) -> str:
-        return self.email
+        return self.full_name or self.phone or self.email or f"User {self.id}"
